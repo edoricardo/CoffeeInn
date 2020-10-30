@@ -29,7 +29,7 @@ public class check extends AppCompatActivity {
         else
         {
 
-            Intent a=new Intent(check.this, ImageCarousel.class);
+            Intent a = new Intent(check.this, ImageCarousel.class);
             startActivity(a);
             finish();
         }
