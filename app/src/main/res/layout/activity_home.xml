@@ -25,7 +25,7 @@
         android:layout_marginStart="177dp"
         android:layout_marginTop="67dp"
         android:layout_marginEnd="177dp"
-        android:text="Testing for second time. Copy sir"
+        android:text="Sending this message from Ryan to Jo."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
