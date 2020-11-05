@@ -36,3 +36,21 @@ Listed 4 of: Coffee Beans.
 Indonesian Coffee still being considered.
 
 Adobe XD UI rough drafted.
+
+# Progress Report #3
+
+Changed Primary color scheme to Navy Blue, Golden Yellow, and White; Secondary is Red.
+
+Finalized Icon changes.
+
+Some pictures have been gathered.
+
+Adobe XD UI built upon; Splash Screen and Image Carousel finalized.
+
+# Progress Report #4
+
+Brand Design Guidelines are created.
+
+Font choices are finalized.
+
+Splash Screen integrated into Android Studio.
