@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Partnership"></activity>
         <activity android:name=".AboutUs" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".HomePage" />
         <activity android:name=".check">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
