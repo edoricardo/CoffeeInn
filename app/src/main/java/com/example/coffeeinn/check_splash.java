@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-public class check extends AppCompatActivity {
+public class check_splash extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,7 @@ public class check extends AppCompatActivity {
             SharedPreferences.Editor editor=settings.edit();
             editor.putBoolean("firstRun",true);
             editor.apply();
-            Intent i=new Intent(check.this, Splash.class);
+            Intent i=new Intent(check_splash.this, Splash.class);
             startActivity(i);
             finish();
         }
@@ -29,7 +29,7 @@ public class check extends AppCompatActivity {
         else
         {
 
-            Intent a = new Intent(check.this, ImageCarousel.class);
+            Intent a = new Intent(check_splash.this, MainActivity.class);
             startActivity(a);
             finish();
         }
