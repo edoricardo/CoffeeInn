@@ -54,3 +54,9 @@ Brand Design Guidelines are created.
 Font choices are finalized.
 
 Splash Screen integrated into Android Studio.
+
+# Progress Report #5
+
+Image Carousel Added.
+
+Home Activity in progress.
