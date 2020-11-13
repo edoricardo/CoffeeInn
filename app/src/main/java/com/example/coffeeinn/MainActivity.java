@@ -7,7 +7,9 @@ import androidx.fragment.app.Fragment;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.provider.Telephony;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -61,9 +63,12 @@ public class MainActivity extends AppCompatActivity {
                             selectedFragment = new AboutFragment();
                             break;
                     }
-                    getSupportFragmentManager().beginTransaction().setCustomAnimations(R.anim.fragment_fade_enter, R.anim.fragment_fade_exit).replace(R.id.fragment_container, selectedFragment).commit();
-
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .setCustomAnimations(R.anim.fragment_fade_enter, R.anim.fragment_fade_exit)
+                                .replace(R.id.fragment_container, selectedFragment, "my_fragment").commit();
                     return true;
                 }
             };
+
 }
