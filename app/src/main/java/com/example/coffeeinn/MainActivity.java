@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                         getSupportFragmentManager()
                                 .beginTransaction()
-                                .setCustomAnimations(R.anim.fragment_fade_enter, R.anim.fragment_fade_exit)
+                                .setCustomAnimations(R.anim.fadein, R.anim.fadeout)
                                 .replace(R.id.fragment_container, selectedFragment, "my_fragment").commit();
                     return true;
                 }
