@@ -24,6 +24,7 @@ public class ImageCarousel extends AppCompatActivity {
 
     CarouselView carouselView;
     int[] sampleImages = {R.drawable.slide_a, R.drawable.slide_b, R.drawable.slide_c, R.drawable.slide_d};
+    int test = sampleImages.length;
 
     String prevStarted = "prevStarted";
     @Override
