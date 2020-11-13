@@ -1,4 +1,4 @@
-<resources>
+ <resources>
     <string name="app_name">CoffeeInn</string>
     <string name="app_version">V1.0.0</string>
     <string name="start_button">Mulai</string>
@@ -19,5 +19,6 @@
     <string name="lead_developer"><b>Lead Developer</b>\nRyan Ahasan Al-Helal</string>
     <string name="lead_design"><b>Lead UI/UX Designer</b>\nJauharul Arifin</string>
     <string name="lead_content"><b>Lead Content Organizer</b>\nMerico Edward Ricardo</string>
+    <string name="coffeein_info">A mobile apps to educate Indonesia about Coffee and its richness in Indonesia</string>
 
 </resources>
