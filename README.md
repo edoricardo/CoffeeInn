@@ -60,3 +60,9 @@ Splash Screen integrated into Android Studio.
 Image Carousel Added.
 
 Home Activity in progress.
+
+# Progress Report #6
+
+About Us Screen added.
+
+Fading transition root screens added.
