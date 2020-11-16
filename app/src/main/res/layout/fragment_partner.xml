@@ -7,87 +7,105 @@
     android:layout_height="match_parent"
     tools:context=".PartnerFragment">
 
-    <ImageView
-        android:id="@+id/toplayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/top_layouta"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="@string/thanks"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
-
-    <ImageView
-        android:id="@+id/geurangopi"
-        android:layout_width="342dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="32dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/geura_ngopi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toplayout" />
-
-    <ImageView
-        android:id="@+id/identic"
-        android:layout_width="342dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="16dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/identic_coffee"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/geurangopi" />
-
-    <ImageView
-        android:id="@+id/pakdani"
-        android:layout_width="342dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="16dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/pak_dani"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/identic" />
-
-    <ImageView
-        android:id="@+id/pakwandy"
-        android:layout_width="342dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="16dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/pak_wandy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pakdani" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="193dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="16dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/partnership"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/tab"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/toplayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/top_layouta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="9dp"
+                android:text="@string/thanks"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView5"
+                fontPath="fonts/panton_black_caps.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Partnerships"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingPrefix" />
+
+            <ImageView
+                android:id="@+id/geurangopi"
+                android:layout_width="342dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="34dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/geura_ngopi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toplayout" />
+
+            <ImageView
+                android:id="@+id/identic"
+                android:layout_width="342dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/identic_coffee"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/geurangopi" />
+
+            <ImageView
+                android:id="@+id/pakdani"
+                android:layout_width="342dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pak_dani"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/identic" />
+
+            <ImageView
+                android:id="@+id/pakwandy"
+                android:layout_width="342dp"
+                android:layout_height="89dp"
+                android:layout_marginTop="25dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pak_wandy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pakdani" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -57,7 +57,7 @@
                 android:layout_width="360dp"
                 android:layout_height="46dp"
                 android:layout_marginTop="30dp"
-                android:text="@string/coffeein_info"
+                android:text="@string/coffeein_slogan"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
