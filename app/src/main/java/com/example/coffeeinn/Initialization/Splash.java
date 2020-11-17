@@ -1,13 +1,12 @@
-package com.example.coffeeinn;
+package com.example.coffeeinn.Initialization;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.example.coffeeinn.R;
 
 public class Splash extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.coffeeinn;
+package com.example.coffeeinn.Home;
 
 import android.os.Bundle;
 
@@ -8,12 +8,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.coffeeinn.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link PartnerFragment#newInstance} factory method to
+ * Use the {@link HomeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class PartnerFragment extends Fragment {
+public class HomeFragment extends Fragment {
+/*
+//for image corausal things
+    CarouselView StatisticCarouselView;
+    int[] statisticImage = {R.drawable.coffee_statistic01, R.drawable.coffee_statistic02, R.drawable.coffee_statistic03, R.drawable.coffee_statistic03};
+ */
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +32,7 @@ public class PartnerFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public PartnerFragment() {
+    public HomeFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +42,11 @@ public class PartnerFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment PartnerFragment.
+     * @return A new instance of fragment HomeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static PartnerFragment newInstance(String param1, String param2) {
-        PartnerFragment fragment = new PartnerFragment();
+    public static HomeFragment newInstance(String param1, String param2) {
+        HomeFragment fragment = new HomeFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -52,13 +60,32 @@ public class PartnerFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+
+            //  StatisticCarouselView = findViewById(R.id.statisticcorousal);
+
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+                             Bundle savedInstanceState)
+    {
+
+        /*
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_partner, container, false);
+        StatisticCarouselView = getView().findViewById(R.id.statisticcorousal);
+        StatisticCarouselView.setPageCount(statisticImage.length);
+        StatisticCarouselView.setImageListener(imageListener);
+        */
+        return inflater.inflate(R.layout.fragment_home, container, false);
+
     }
+/*
+ImageListener imageListener = new ImageListener() {
+        @Override
+        public void setImageForPosition(int position, ImageView imageView) {
+            imageView.setImageResource(statisticImage[position]);
+        }
+    };
+ */
 }

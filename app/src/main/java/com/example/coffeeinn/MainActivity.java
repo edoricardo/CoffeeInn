@@ -7,10 +7,11 @@ import androidx.fragment.app.Fragment;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.provider.Telephony;
 import android.view.MenuItem;
-import android.view.View;
 
+import com.example.coffeeinn.About.AboutFragment;
+import com.example.coffeeinn.Home.HomeFragment;
+import com.example.coffeeinn.Partnership.PartnerFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import io.github.inflationx.calligraphy3.CalligraphyConfig;

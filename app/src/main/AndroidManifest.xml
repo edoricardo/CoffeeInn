@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".check_splash">
+        <activity android:name=".Initialization.check_splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,11 +19,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ImageCarousel"
+            android:name=".Initialization.ImageCarousel"
             android:noHistory="true"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".Splash"
+            android:name=".Initialization.Splash"
             android:noHistory="true"
             android:theme="@style/AppTheme" />
     </application>

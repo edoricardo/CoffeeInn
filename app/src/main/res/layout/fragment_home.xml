@@ -9,7 +9,7 @@
     android:backgroundTint="#00FFFFFF"
     android:fadingEdge="none"
     android:foregroundTint="#00FFFFFF"
-    tools:context=".HomeFragment">
+    tools:context=".Home.HomeFragment">
 
 
     <ScrollView

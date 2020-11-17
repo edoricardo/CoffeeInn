@@ -1,23 +1,19 @@
-package com.example.coffeeinn;
+package com.example.coffeeinn.Initialization;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+import com.example.coffeeinn.MainActivity;
+import com.example.coffeeinn.R;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 
 public class ImageCarousel extends AppCompatActivity {
