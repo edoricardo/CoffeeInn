@@ -2,11 +2,17 @@ package com.example.coffeeinn.Home;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.example.coffeeinn.R;
 
@@ -16,11 +22,6 @@ import com.example.coffeeinn.R;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
-/*
-//for image corausal things
-    CarouselView StatisticCarouselView;
-    int[] statisticImage = {R.drawable.coffee_statistic01, R.drawable.coffee_statistic02, R.drawable.coffee_statistic03, R.drawable.coffee_statistic03};
- */
 
 
     // TODO: Rename parameter arguments, choose names that match
@@ -61,31 +62,14 @@ public class HomeFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
 
-            //  StatisticCarouselView = findViewById(R.id.statisticcorousal);
-
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState)
-    {
-
-        /*
+                             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        StatisticCarouselView = getView().findViewById(R.id.statisticcorousal);
-        StatisticCarouselView.setPageCount(statisticImage.length);
-        StatisticCarouselView.setImageListener(imageListener);
-        */
         return inflater.inflate(R.layout.fragment_home, container, false);
-
     }
-/*
-ImageListener imageListener = new ImageListener() {
-        @Override
-        public void setImageForPosition(int position, ImageView imageView) {
-            imageView.setImageResource(statisticImage[position]);
-        }
-    };
- */
+
 }

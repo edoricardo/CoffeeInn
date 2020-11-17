@@ -105,7 +105,7 @@
                 app:layout_constraintTop_toTopOf="@+id/BgIconMenu" />
 
             <ImageButton
-                android:id="@+id/coffeebeans"
+                android:id="@+id/button_coffeebeans"
                 android:layout_width="105dp"
                 android:layout_height="104dp"
                 android:layout_marginStart="16dp"
@@ -127,7 +127,7 @@
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icon_video"
-                app:layout_constraintStart_toEndOf="@+id/coffeebeans"
+                app:layout_constraintStart_toEndOf="@+id/button_coffeebeans"
                 app:layout_constraintTop_toBottomOf="@+id/PopularCoffee" />
 
             <ImageButton
@@ -143,23 +143,6 @@
                 app:layout_constraintStart_toEndOf="@+id/video"
                 app:layout_constraintTop_toBottomOf="@+id/breewingmethod" />
 
-            <!--Image carouselViewBelom beres
-            <com.synnapps.carouselview.CarouselView
-                android:id="@+id/statisticcorousal"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="56dp"
-                app:autoPlay='true'
-                app:fillColor="#00"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/BgIconMenu"
-                app:pageColor="#00"
-                app:radius="10dp"
-                app:strokeColor="#FFD644"
-                app:strokeWidth="1dp" />
-                -->
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="wrap_content"
