@@ -12,6 +12,8 @@ import androidx.navigation.fragment.NavHostFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ViewFlipper;
 import android.widget.ImageButton;
 
 import com.example.coffeeinn.R;
@@ -23,6 +25,7 @@ import com.example.coffeeinn.R;
  */
 public class HomeFragment extends Fragment {
 
+    private ViewFlipper v_flipper;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -66,10 +69,35 @@ public class HomeFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+
+        int images[] = {R.drawable.coffee_statistic, R.drawable.coffee_statistic01,
+                R.drawable.coffee_statistic02, R.drawable.coffee_statistic03};
+
+        v_flipper = rootView.findViewById(R.id.viewFlipper);
+          for (int image: images)
+          {
+            flipperImages(image);
+          }
+
+
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
+    public void flipperImages(int image) 
+    {
+        ImageView imageView = new ImageView(getActivity());
+        imageView.setBackgroundResource(image);
+
+        v_flipper.startFlipping();
+        v_flipper.addView(imageView);
+        v_flipper.setFlipInterval(3000);
+        v_flipper.setAutoStart(true);
+
+        v_flipper.setOutAnimation(getActivity(), android.R.anim.fade_out);
+        v_flipper.setInAnimation(getActivity(), android.R.anim.fade_in);
+
+    }
 }
