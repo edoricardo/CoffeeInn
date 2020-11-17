@@ -5,16 +5,176 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    android:background="#00FFFFFF"
+    android:backgroundTint="#00FFFFFF"
+    android:fadingEdge="none"
+    android:foregroundTint="#00FFFFFF"
+    tools:context=".Home.HomeFragment">
 
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home Fragment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/BGblue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/top_layouta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/Logo"
+                android:layout_width="495px"
+                android:layout_height="79px"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/coffee_inn_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/BgIconMenu"
+                android:layout_width="381dp"
+                android:layout_height="296dp"
+                android:layout_marginTop="64dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_home"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CoffeeIn_Info" />
+
+            <TextView
+                android:id="@+id/CoffeeIn_Info"
+                android:layout_width="360dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/coffeein_slogan"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Logo" />
+
+            <ImageButton
+                android:id="@+id/indonesiancoffee"
+                android:layout_width="105dp"
+                android:layout_height="104dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_indonesiancoffe"
+                app:layout_constraintStart_toStartOf="@+id/BgIconMenu"
+                app:layout_constraintTop_toTopOf="@+id/BgIconMenu" />
+
+            <ImageButton
+                android:id="@+id/PopularCoffee"
+                android:layout_width="105dp"
+                android:layout_height="104dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_popularcoffee"
+                app:layout_constraintStart_toEndOf="@+id/indonesiancoffee"
+                app:layout_constraintTop_toTopOf="@+id/BgIconMenu" />
+
+            <ImageButton
+                android:id="@+id/breewingmethod"
+                android:layout_width="105dp"
+                android:layout_height="104dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_brewingmethod"
+                app:layout_constraintStart_toEndOf="@+id/PopularCoffee"
+                app:layout_constraintTop_toTopOf="@+id/BgIconMenu" />
+
+            <ImageButton
+                android:id="@+id/coffeebeans"
+                android:layout_width="105dp"
+                android:layout_height="104dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="35dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_coffeebeans"
+                app:layout_constraintStart_toStartOf="@+id/BgIconMenu"
+                app:layout_constraintTop_toBottomOf="@+id/indonesiancoffee" />
+
+            <ImageButton
+                android:id="@+id/video"
+                android:layout_width="105dp"
+                android:layout_height="104dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="35dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_video"
+                app:layout_constraintStart_toEndOf="@+id/coffeebeans"
+                app:layout_constraintTop_toBottomOf="@+id/PopularCoffee" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="105dp"
+                android:layout_height="104dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="35dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_nearestlocation"
+                app:layout_constraintStart_toEndOf="@+id/video"
+                app:layout_constraintTop_toBottomOf="@+id/breewingmethod" />
+
+            <!--Image carouselViewBelom beres
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/statisticcorousal"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="56dp"
+                app:autoPlay='true'
+                app:fillColor="#00"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BgIconMenu"
+                app:pageColor="#00"
+                app:radius="10dp"
+                app:strokeColor="#FFD644"
+                app:strokeWidth="1dp" />
+                -->
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="51dp"
+                android:layout_marginTop="176dp"
+                android:layout_marginEnd="88dp"
+                android:src="@drawable/icon_coffeebeans"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BgIconMenu" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
