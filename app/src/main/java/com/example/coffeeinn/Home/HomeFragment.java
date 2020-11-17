@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ViewFlipper;
 
 import com.example.coffeeinn.R;
 
@@ -16,10 +18,12 @@ import com.example.coffeeinn.R;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
+
+    private ViewFlipper v_flipper;
 /*
 //for image corausal things
     CarouselView StatisticCarouselView;
-    int[] statisticImage = {R.drawable.coffee_statistic01, R.drawable.coffee_statistic02, R.drawable.coffee_statistic03, R.drawable.coffee_statistic03};
+    int[] image = {R.drawable.coffee_statistic01, R.drawable.coffee_statistic02, R.drawable.coffee_statistic03, R.drawable.coffee_statistic03};
  */
 
 
@@ -61,7 +65,6 @@ public class HomeFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
 
-            //  StatisticCarouselView = findViewById(R.id.statisticcorousal);
 
         }
     }
@@ -70,22 +73,33 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
+        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
-        /*
-        // Inflate the layout for this fragment
-        StatisticCarouselView = getView().findViewById(R.id.statisticcorousal);
-        StatisticCarouselView.setPageCount(statisticImage.length);
-        StatisticCarouselView.setImageListener(imageListener);
-        */
+
+        int images[] = {R.drawable.coffee_statistic, R.drawable.coffee_statistic01,
+                R.drawable.coffee_statistic02, R.drawable.coffee_statistic03};
+
+
+        v_flipper = rootView.findViewById(R.id.viewFlipper);
+          for (int image: images){
+            flipperImages(image);
+        }
+
+
         return inflater.inflate(R.layout.fragment_home, container, false);
+    }
+
+    public void flipperImages(int image) {
+        ImageView imageView = new ImageView(getActivity());
+        imageView.setBackgroundResource(image);
+
+        v_flipper.startFlipping();
+        v_flipper.addView(imageView);
+        v_flipper.setFlipInterval(3000);
+        v_flipper.setAutoStart(true);
+
+        v_flipper.setOutAnimation(getActivity(), android.R.anim.fade_out);
+        v_flipper.setInAnimation(getActivity(), android.R.anim.fade_in);
 
     }
-/*
-ImageListener imageListener = new ImageListener() {
-        @Override
-        public void setImageForPosition(int position, ImageView imageView) {
-            imageView.setImageResource(statisticImage[position]);
-        }
-    };
- */
 }
