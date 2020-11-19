@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 import android.widget.ImageButton;
 
@@ -71,32 +72,27 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
-
-        int images[] = {R.drawable.coffee_statistic, R.drawable.coffee_statistic01,
-                R.drawable.coffee_statistic02, R.drawable.coffee_statistic03};
-
-        v_flipper = rootView.findViewById(R.id.viewFlipper);
-          for (int image: images)
-          {
-            flipperImages(image);
-          }
 
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
-    public void flipperImages(int image) 
-    {
-        ImageView imageView = new ImageView(getActivity());
-        imageView.setBackgroundResource(image);
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-        v_flipper.startFlipping();
-        v_flipper.addView(imageView);
-        v_flipper.setFlipInterval(3000);
-        v_flipper.setAutoStart(true);
+        view.findViewById(R.id.button_coffeebeans).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager
+                        .beginTransaction()
+                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout);
+                Fragment selected = new CoffeeBeans();
+                fragmentTransaction.replace(R.id.fragment_container, selected);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
 
-        v_flipper.setOutAnimation(getActivity(), android.R.anim.fade_out);
-        v_flipper.setInAnimation(getActivity(), android.R.anim.fade_in);
-
+            }
+        });
     }
+
 }

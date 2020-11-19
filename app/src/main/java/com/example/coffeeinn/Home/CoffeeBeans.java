@@ -2,11 +2,14 @@ package com.example.coffeeinn.Home;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.coffeeinn.R;
 
@@ -63,6 +66,7 @@ public class CoffeeBeans extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_coffee_beans, container, false);
     }
+    
 
 
 }
