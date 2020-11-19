@@ -8,12 +8,13 @@
     tools:context=".Initialization.ImageCarousel">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_start"
         android:layout_width="153dp"
         android:layout_height="57dp"
         android:layout_marginStart="162dp"
         android:layout_marginEnd="162dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="15dp"
+        android:alpha="100"
         android:onClick="Test"
         android:text="@string/start_button"
         android:textSize="24sp"

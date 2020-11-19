@@ -19,4 +19,6 @@
     <string name="lead_design"><b>Lead UI/UX Designer</b>\nJauharul Arifin</string>
     <string name="lead_content"><b>Lead Content Organizer</b>\nMerico Edward Ricardo</string>
     <string name="thanks">Terima kasih kepada partner kami yang sudah mendukung proses pembuatan aplikasi ini dan mensupport ide serta bahan-bahan berupa foto dan video. \n\nRegards, \nCoffeeinn Team</string>
+    <string name="coffeeBean_robusta_title">Robusta</string>
+    <string name="coffeeBean_arabica_title">Arabica</string>
 </resources>

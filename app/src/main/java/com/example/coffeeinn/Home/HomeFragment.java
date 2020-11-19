@@ -85,7 +85,7 @@ public class HomeFragment extends Fragment {
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager
                         .beginTransaction()
-                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout);
+                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
                 Fragment selected = new CoffeeBeans();
                 fragmentTransaction.replace(R.id.fragment_container, selected);
                 fragmentTransaction.addToBackStack(null);
