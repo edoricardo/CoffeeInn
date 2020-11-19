@@ -56,6 +56,11 @@
                 android:layout_marginEnd="10dp"
                 android:adjustViewBounds="true"
                 android:src="@drawable/coffeebean_arabica_button"
+                android:background="@drawable/ripple_coffeebean_arabica"
+                android:tintMode="src_in"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -71,21 +76,28 @@
                 android:adjustViewBounds="true"
                 android:cropToPadding="false"
                 android:src="@drawable/coffeebean_robusta_button"
+                android:background="@drawable/ripple_coffeebean_robusta"
+                android:tintMode="src_in"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
             <TextView
+                fontPath="fonts/panton_black_caps.otf"
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="24dp"
-                android:text="Arabica"
+                android:text="@string/coffeeBean_arabica_title"
                 android:textColor="#000000"
                 android:textSize="25sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingPrefix" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -93,11 +105,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="32dp"
-                android:text="Robusta"
+                android:text="@string/coffeeBean_robusta_title"
+                fontPath="fonts/panton_black_caps.otf"
                 android:textColor="#000000"
                 android:textSize="25sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                tools:ignore="MissingPrefix" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
