@@ -66,3 +66,9 @@ Home Activity in progress.
 About Us Screen added.
 
 Fading transition root screens added.
+
+# Progress Report #7
+
+Navigation concept found.
+
+ViewFlipper functional.
