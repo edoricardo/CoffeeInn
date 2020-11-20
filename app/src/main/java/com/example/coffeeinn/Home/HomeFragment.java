@@ -3,7 +3,6 @@ package com.example.coffeeinn.Home;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -17,8 +16,7 @@ import com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans;
 import com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee;
 import com.example.coffeeinn.Home.PopularCoffee.PopularCoffee;
 import com.example.coffeeinn.R;
-import com.example.coffeeinn.Videos;
-import com.example.coffeeinn.mapstest;
+import com.example.coffeeinn.Home.Videos.Videos;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -94,7 +92,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        view.findViewById(R.id.video).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.button_videos).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getFragmentManager();
@@ -124,11 +122,7 @@ public class HomeFragment extends Fragment {
 
             }
         });
-
  */
-    }
-
-
         view.findViewById(R.id.button_popularcoffee).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
             @Override
             public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
@@ -178,3 +172,4 @@ public class HomeFragment extends Fragment {
         });
     }
 }
+

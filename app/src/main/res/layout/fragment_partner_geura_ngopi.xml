@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Partnership.fragment_partner_geura_ngopi">
+    tools:context=".Partnership.Partner_GeuraNgopi">
 
     <WebView
         android:layout_width="0dp"

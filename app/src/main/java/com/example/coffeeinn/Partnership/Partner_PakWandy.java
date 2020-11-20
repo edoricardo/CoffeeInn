@@ -12,10 +12,10 @@ import com.example.coffeeinn.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link fragment_partner_pdani#newInstance} factory method to
+ * Use the {@link Partner_PakWandy#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fragment_partner_pdani extends Fragment {
+public class Partner_PakWandy extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class fragment_partner_pdani extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public fragment_partner_pdani() {
+    public Partner_PakWandy() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class fragment_partner_pdani extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment fragment_partner_pdani.
+     * @return A new instance of fragment fragment_partner_pWandy.
      */
     // TODO: Rename and change types and number of parameters
-    public static fragment_partner_pdani newInstance(String param1, String param2) {
-        fragment_partner_pdani fragment = new fragment_partner_pdani();
+    public static Partner_PakWandy newInstance(String param1, String param2) {
+        Partner_PakWandy fragment = new Partner_PakWandy();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class fragment_partner_pdani extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_partner_pdani, container, false);
+        return inflater.inflate(R.layout.fragment_partner_p_wandy, container, false);
     }
 }
