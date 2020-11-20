@@ -28,7 +28,7 @@
         android:id="@+id/coffeeBeans"
         android:name="com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans"
         android:label="fragment_coffee_beans"
-        tools:layout="@layout/fragment_coffee_beans" />
+        tools:layout="@layout/fragment_cbeans" />
     <fragment
         android:id="@+id/fragment_cbean_arabica"
         android:name="com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans_Arabica"
@@ -39,6 +39,11 @@
         android:name="com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans_Robusta"
         android:label="fragment_cbean_robusta"
         tools:layout="@layout/fragment_cbean_robusta" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_pcoffee" />
     <fragment
         android:id="@+id/popularCoffee_Espresso"
         android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_Espresso"
@@ -74,6 +79,7 @@
         android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_FrenchPress"
         android:label="fragment_bmethods_frenchpress"
         tools:layout="@layout/fragment_bmethods_frenchpress" />
+  
     <fragment
         android:id="@+id/fragment_partner_geura_ngopi"
         android:name="com.example.coffeeinn.Partnership.fragment_partner_geura_ngopi"
@@ -94,4 +100,99 @@
         android:name="com.example.coffeeinn.Partnership.fragment_partner_pWandy"
         android:label="fragment_partner_p_wandy"
         tools:layout="@layout/fragment_partner_p_wandy" />
+    <fragment
+        android:id="@+id/brewingMethods"
+        android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods"
+        android:label="fragment_bmethods"
+        tools:layout="@layout/fragment_bmethods" />
+    <fragment
+        android:id="@+id/brewingMethods_Chemex"
+        android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_Chemex"
+        android:label="fragment_bmethods_chemex"
+        tools:layout="@layout/fragment_bmethods_chemex" />
+    <fragment
+        android:id="@+id/brewingMethods_AeroPress"
+        android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_AeroPress"
+        android:label="fragment_bmethods_aeropress"
+        tools:layout="@layout/fragment_bmethods_aeropress" />
+    <fragment
+        android:id="@+id/brewingMethods_Syphon"
+        android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_Syphon"
+        android:label="fragment_bmethods_syphon"
+        tools:layout="@layout/fragment_bmethods_syphon" />
+    <fragment
+        android:id="@+id/brewingMethods_ColdBrew"
+        android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_ColdBrew"
+        android:label="fragment_bmethods_coldbrew"
+        tools:layout="@layout/fragment_bmethods_coldbrew" />
+    <fragment
+        android:id="@+id/brewingMethods_EspressoMachine"
+        android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_EspressoMachine"
+        android:label="fragment_bmethods_espressomachine"
+        tools:layout="@layout/fragment_bmethods_espressomachine" />
+    <fragment
+        android:id="@+id/brewingMethods_BeeHouseDripper"
+        android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_BeeHouseDripper"
+        android:label="fragment_bmethods_beehousedripper"
+        tools:layout="@layout/fragment_bmethods_beehousedripper" />
+    <fragment
+        android:id="@+id/coffeeBeans_Liberica"
+        android:name="com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans_Liberica"
+        android:label="fragment_cbeans_liberica"
+        tools:layout="@layout/fragment_cbeans_liberica" />
+    <fragment
+        android:id="@+id/coffeeBeans_Excelsa"
+        android:name="com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans_Excelsa"
+        android:label="fragment_cbeans_excelsa"
+        tools:layout="@layout/fragment_cbeans_excelsa" />
+    <fragment
+        android:id="@+id/indonesianCoffee_KopiToraja"
+        android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiToraja"
+        android:label="fragment_indocoffee_kopitoraja"
+        tools:layout="@layout/fragment_indocoffee_kopitoraja" />
+    <fragment
+        android:id="@+id/indonesianCoffee_KopiAceh"
+        android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiAceh"
+        android:label="fragment_indocoffee_kopiaceh"
+        tools:layout="@layout/fragment_indocoffee_kopiaceh" />
+    <fragment
+        android:id="@+id/indonesianCoffee_KopiKintamaniBali"
+        android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiKintamaniBali"
+        android:label="fragment_indocoffee_kopikintamanibali"
+        tools:layout="@layout/fragment_indocoffee_kopikintamanibali" />
+    <fragment
+        android:id="@+id/indonesianCoffee_KopiFlores"
+        android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiFlores"
+        android:label="fragment_indocoffee_kopiflores"
+        tools:layout="@layout/fragment_indocoffee_kopiflores" />
+    <fragment
+        android:id="@+id/indonesianCoffee_KopiJavaIjenRaung"
+        android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiJavaIjenRaung"
+        android:label="fragment_indocoffee_kopijavaijenraung"
+        tools:layout="@layout/fragment_indocoffee_kopijavaijenraung" />
+    <fragment
+        android:id="@+id/indonesianCoffee_KopiPapuaWamena"
+        android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiPapuaWamena"
+        android:label="fragment_indocoffee_kopipapuawamena"
+        tools:layout="@layout/fragment_indocoffee_kopipapuawamena" />
+    <fragment
+        android:id="@+id/indonesianCoffee_KopiLuwak"
+        android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiLuwak"
+        android:label="fragment_indocoffee_kopiluwak"
+        tools:layout="@layout/fragment_indocoffee_kopiluwak" />
+    <fragment
+        android:id="@+id/indonesianCoffee_KopiLiberikaRangsangMerantiRiau"
+        android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiLiberikaRangsangMerantiRiau"
+        android:label="fragment_indocoffee_kopiliberikarangsangmerantiriau"
+        tools:layout="@layout/fragment_indocoffee_kopiliberikarangsangmerantiriau" />
+    <fragment
+        android:id="@+id/indonesianCoffee_KopiSidikalang"
+        android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiSidikalang"
+        android:label="fragment_indocoffee_kopisidikalang"
+        tools:layout="@layout/fragment_indocoffee_kopisidikalang" />
+    <fragment
+        android:id="@+id/indonesianCoffee_KopiCiwidey"
+        android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiCiwidey"
+        android:label="fragment_indocoffee_kopiciwidey"
+        tools:layout="@layout/fragment_indocoffee_kopiciwidey" />
 </navigation>
