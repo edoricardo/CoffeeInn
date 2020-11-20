@@ -65,7 +65,7 @@ public class CoffeeBeans extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_coffee_beans, container, false);
+        return inflater.inflate(R.layout.fragment_cbeans, container, false);
     }
 
     @Override
@@ -101,6 +101,38 @@ public class CoffeeBeans extends Fragment {
 
             }
         });
+
+        view.findViewById(R.id.button_excelsa).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager
+                        .beginTransaction()
+                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
+                Fragment selected = new CoffeeBeans_Excelsa();
+                fragmentTransaction.replace(R.id.fragment_container, selected);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
+            }
+        });
+
+        view.findViewById(R.id.button_liberica).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager
+                        .beginTransaction()
+                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
+                Fragment selected = new CoffeeBeans_Liberica();
+                fragmentTransaction.replace(R.id.fragment_container, selected);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
+            }
+        });
+
+
 
     }
 }
