@@ -69,17 +69,17 @@ public class HomeFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {  // it should use OnViewCreated Method
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.button_coffeebeans).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.button_coffeebeans).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager
                         .beginTransaction()
                         .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                Fragment selected = new CoffeeBeans();
+                Fragment selected = new CoffeeBeans();  // Use the java class you want to go to (this is the destination fragment)
                 fragmentTransaction.replace(R.id.fragment_container, selected);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
