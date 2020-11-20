@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/scrollView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:id="@+id/linearLayout3"
@@ -19,7 +19,7 @@
             app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" >
+            app:layout_constraintTop_toTopOf="parent">
 
         </LinearLayout>
 
@@ -29,25 +29,16 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:cropToPadding="false"
-            android:src="@drawable/rec_up"
+            android:src="@drawable/top_bar"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout_editor_absoluteX="16dp" />
 
         <ImageView
-            android:id="@+id/textvideo"
-            android:layout_width="145dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="50dp"
-            android:src="@drawable/video_text"
-            app:layout_constraintBottom_toBottomOf="@+id/headerblue"
-            app:layout_constraintStart_toStartOf="@+id/headerblue"
-            app:layout_constraintTop_toTopOf="@+id/headerblue" />
-
-        <ImageView
             android:id="@+id/backbtn"
-            android:layout_width="47dp"
-            android:layout_height="47dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/back_icon"
             app:layout_constraintBottom_toBottomOf="@+id/headerblue"
             app:layout_constraintStart_toStartOf="@+id/headerblue"
@@ -134,6 +125,20 @@
             android:text="Geura Ngopi"
             app:layout_constraintStart_toStartOf="@+id/textView20"
             app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            fontPath="fonts/panton_black_caps.otf"
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Videos"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/headerblue"
+            app:layout_constraintStart_toEndOf="@+id/backbtn"
+            app:layout_constraintTop_toTopOf="@+id/headerblue"
+            tools:ignore="MissingPrefix" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
