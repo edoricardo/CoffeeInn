@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -49,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    Fragment selectedFragment = null;
 
+                    Fragment selectedFragment = null;
                     switch (item.getItemId())
                     {
                         case R.id.partnerFragment:
@@ -63,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
                             selectedFragment = new AboutFragment();
                             break;
                     }
+
+                    getSupportFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                         getSupportFragmentManager()
                                 .beginTransaction()
                                 .setCustomAnimations(R.anim.fadein, R.anim.fadeout)

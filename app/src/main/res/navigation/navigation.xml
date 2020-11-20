@@ -29,4 +29,14 @@
         android:name="com.example.coffeeinn.Home.CoffeeBeans"
         android:label="fragment_coffee_beans"
         tools:layout="@layout/fragment_coffee_beans" />
+    <fragment
+        android:id="@+id/fragment_cbean_arabica"
+        android:name="com.example.coffeeinn.Home.CoffeeBeans_Arabica"
+        android:label="fragment_cbean_arabica"
+        tools:layout="@layout/fragment_cbean_arabica" />
+    <fragment
+        android:id="@+id/fragment_cbean_robusta"
+        android:name="com.example.coffeeinn.Home.CoffeeBeans_Robusta"
+        android:label="fragment_cbean_robusta"
+        tools:layout="@layout/fragment_cbean_robusta" />
 </navigation>
