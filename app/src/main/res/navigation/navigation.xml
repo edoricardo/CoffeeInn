@@ -40,6 +40,11 @@
         android:label="fragment_cbean_robusta"
         tools:layout="@layout/fragment_cbean_robusta" />
     <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_pcoffee" />
+    <fragment
         android:id="@+id/popularCoffee_Espresso"
         android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_Espresso"
         android:label="fragment_pcoffee__espresso"
@@ -74,11 +79,27 @@
         android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_FrenchPress"
         android:label="fragment_bmethods_frenchpress"
         tools:layout="@layout/fragment_bmethods_frenchpress" />
+  
     <fragment
-        android:id="@+id/listFragment"
-        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee"
-        android:label="fragment_list"
-        tools:layout="@layout/fragment_pcoffee" />
+        android:id="@+id/fragment_partner_geura_ngopi"
+        android:name="com.example.coffeeinn.Partnership.fragment_partner_geura_ngopi"
+        android:label="fragment_partner_geura_ngopi"
+        tools:layout="@layout/fragment_partner_geura_ngopi" />
+    <fragment
+        android:id="@+id/fragment_partner_identic_coffee"
+        android:name="com.example.coffeeinn.Partnership.fragment_partner_identic_coffee"
+        android:label="fragment_partner_identic_coffee"
+        tools:layout="@layout/fragment_partner_identic_coffee" />
+    <fragment
+        android:id="@+id/fragment_partner_pdani"
+        android:name="com.example.coffeeinn.Partnership.fragment_partner_pdani"
+        android:label="fragment_partner_pdani"
+        tools:layout="@layout/fragment_partner_pdani" />
+    <fragment
+        android:id="@+id/fragment_partner_pWandy"
+        android:name="com.example.coffeeinn.Partnership.fragment_partner_pWandy"
+        android:label="fragment_partner_p_wandy"
+        tools:layout="@layout/fragment_partner_p_wandy" />
     <fragment
         android:id="@+id/brewingMethods"
         android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods"

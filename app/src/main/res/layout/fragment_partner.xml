@@ -5,7 +5,96 @@
     android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PartnerFragment">
+    tools:context="fragment_partner">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toplayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/geurangopi"
+                android:layout_width="342dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="34dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/geura_ngopi"
+                android:background="@drawable/ripple_geura_ngopi"
+                android:clickable="true"
+                android:focusable="true"
+                android:tintMode="src_in"
+                app:tint="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/identic"
+                android:layout_width="342dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="34dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/identic_coffee"
+                android:background="@drawable/ripple_identic_coffee"
+                android:clickable="true"
+                android:focusable="true"
+                android:tintMode="src_in"
+                app:tint="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/geurangopi" />
+
+            <ImageView
+                android:id="@+id/pakdani"
+                android:layout_width="342dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="34dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pak_dani"
+                android:background="@drawable/ripple_pak_dani"
+                android:clickable="true"
+                android:focusable="true"
+                android:tintMode="src_in"
+                app:tint="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/identic" />
+
+            <ImageView
+                android:id="@+id/pakwandy"
+                android:layout_width="342dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="34dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/pak_wandy"
+                android:background="@drawable/ripple_pak_wandy"
+                android:clickable="true"
+                android:focusable="true"
+                android:tintMode="src_in"
+                app:tint="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pakdani" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
     <ImageView
         android:id="@+id/toplayout"
@@ -31,50 +120,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <ImageView
-        android:id="@+id/geurangopi"
-        android:layout_width="342dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="32dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/geura_ngopi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toplayout" />
-
-    <ImageView
-        android:id="@+id/identic"
-        android:layout_width="342dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="16dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/identic_coffee"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/geurangopi" />
-
-    <ImageView
-        android:id="@+id/pakdani"
-        android:layout_width="342dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="16dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/pak_dani"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/identic" />
-
-    <ImageView
-        android:id="@+id/pakwandy"
-        android:layout_width="342dp"
-        android:layout_height="89dp"
-        android:layout_marginTop="16dp"
-        android:adjustViewBounds="true"
-        android:src="@drawable/pak_wandy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pakdani" />
 
     <TextView
         android:id="@+id/textView5"
