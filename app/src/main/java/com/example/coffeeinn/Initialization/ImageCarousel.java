@@ -73,6 +73,7 @@ public class ImageCarousel extends AppCompatActivity {
                     for (View v : viewsToFadeIn)
                     {
                         v.animate().alpha(1.0f).setDuration(250).start();
+                        v.setClickable(true);
                     }
                 }
 
@@ -81,6 +82,7 @@ public class ImageCarousel extends AppCompatActivity {
                     for (View v : viewsToFadeIn)
                     {
                         v.animate().alpha(0.0f).setDuration(250).start();
+                        v.setClickable(false);
                     }
                 }
             }
