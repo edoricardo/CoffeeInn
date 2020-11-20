@@ -1,4 +1,4 @@
-package com.example.coffeeinn.Home;
+package com.example.coffeeinn.Home.PopularCoffee;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.coffeeinn.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CoffeeBeans_Robusta#newInstance} factory method to
+ * Use the {@link PopularCoffee_ColdBrew#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CoffeeBeans_Robusta extends Fragment {
+public class PopularCoffee_ColdBrew extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class CoffeeBeans_Robusta extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public CoffeeBeans_Robusta() {
+    public PopularCoffee_ColdBrew() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class CoffeeBeans_Robusta extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment fragment_cbean_robusta.
+     * @return A new instance of fragment PopularCoffee_ColdBrew.
      */
     // TODO: Rename and change types and number of parameters
-    public static CoffeeBeans_Robusta newInstance(String param1, String param2) {
-        CoffeeBeans_Robusta fragment = new CoffeeBeans_Robusta();
+    public static PopularCoffee_ColdBrew newInstance(String param1, String param2) {
+        PopularCoffee_ColdBrew fragment = new PopularCoffee_ColdBrew();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class CoffeeBeans_Robusta extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cbean_robusta, container, false);
+        return inflater.inflate(R.layout.fragment_pcoffee_coldbrew, container, false);
     }
 }

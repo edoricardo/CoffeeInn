@@ -26,17 +26,52 @@
         tools:layout="@layout/fragment_partner" />
     <fragment
         android:id="@+id/coffeeBeans"
-        android:name="com.example.coffeeinn.Home.CoffeeBeans"
+        android:name="com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans"
         android:label="fragment_coffee_beans"
         tools:layout="@layout/fragment_coffee_beans" />
     <fragment
         android:id="@+id/fragment_cbean_arabica"
-        android:name="com.example.coffeeinn.Home.CoffeeBeans_Arabica"
+        android:name="com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans_Arabica"
         android:label="fragment_cbean_arabica"
         tools:layout="@layout/fragment_cbean_arabica" />
     <fragment
         android:id="@+id/fragment_cbean_robusta"
-        android:name="com.example.coffeeinn.Home.CoffeeBeans_Robusta"
+        android:name="com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans_Robusta"
         android:label="fragment_cbean_robusta"
         tools:layout="@layout/fragment_cbean_robusta" />
+    <fragment
+        android:id="@+id/popularCoffee_Espresso"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_Espresso"
+        android:label="fragment_pcoffee__espresso"
+        tools:layout="@layout/fragment_pcoffee__espresso" />
+    <fragment
+        android:id="@+id/popularCoffee_ColdBrew"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_ColdBrew"
+        android:label="fragment_pcoffee_coldbrew"
+        tools:layout="@layout/fragment_pcoffee_coldbrew" />
+    <fragment
+        android:id="@+id/popularCoffee_GroundCoffee"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_GroundCoffee"
+        android:label="fragment_pcoffee_groundcoffee"
+        tools:layout="@layout/fragment_pcoffee_groundcoffee" />
+    <fragment
+        android:id="@+id/brewingMethods_V60"
+        android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_V60"
+        android:label="fragment_bmethods_v60"
+        tools:layout="@layout/fragment_bmethods_v60" />
+    <fragment
+        android:id="@+id/brewingMethods_MokaPot"
+        android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_MokaPot"
+        android:label="fragment_bmethods_mokapot"
+        tools:layout="@layout/fragment_bmethods_mokapot" />
+    <fragment
+        android:id="@+id/brewingMethods_VietnameseDrip"
+        android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_VietnameseDrip"
+        android:label="fragment_bmethods_vietnamesedrip"
+        tools:layout="@layout/fragment_bmethods_vietnamesedrip" />
+    <fragment
+        android:id="@+id/brewingMethods_FrenchPress"
+        android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods_FrenchPress"
+        android:label="fragment_bmethods_frenchpress"
+        tools:layout="@layout/fragment_bmethods_frenchpress" />
 </navigation>

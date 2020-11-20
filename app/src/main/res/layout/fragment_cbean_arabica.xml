@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home.CoffeeBeans_Arabica">
+    tools:context=".Home.CoffeeBeans.CoffeeBeans_Arabica">
 
     <ScrollView
         android:id="@+id/scrollView3"
