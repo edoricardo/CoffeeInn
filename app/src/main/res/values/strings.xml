@@ -21,4 +21,7 @@
     <string name="thanks">Terima kasih kepada partner kami yang sudah mendukung proses pembuatan aplikasi ini dan mensupport ide serta bahan-bahan berupa foto dan video. \n\nRegards, \nCoffeeinn Team</string>
     <string name="coffeeBean_robusta_title">Robusta</string>
     <string name="coffeeBean_arabica_title">Arabica</string>
+    <string name="coffeebeans_arabica_text">Arabica merupakan salah satu jenis kopi yang paling populer bersama dengan robusta. Kopi arabica dihasilkan dari tanaman Caffea arabica yang berasal dari Etiopia kemudian dibawa ke Arab oleh pedagang Yaman. Kemudian minuman kopi dari biji kopi arabica mulai populer setelah orang-orang Arab membuat minuman penyegar dari ekstrak biji kopi arabica yang diseduh dengan air hangat.</string>
+    <string name="coffee_beans">Coffee Beans</string>
+    <string name="coffeebeans_robusta_text">Nama biji kopi ini diambil dari kata “robust” yang berarti kuat. Sesuai dengan Namanya, minuman kopi yang dihasilkan dari ekstrasi biji kopi ini memiliki cita rasa yang lebih kuat dan terasa pahit. Biasanya kopi robusta digunakan sebagai bahan pembuatan kopi siap saji (instant) dan pencampur kopi racikan (blend) supaya menambah cita rasa kopi selain itu, minuman kopi seperti cappuccino, café latte dan macchiato juga menggunakan bahan dari biji kopi robusta.</string>
 </resources>
