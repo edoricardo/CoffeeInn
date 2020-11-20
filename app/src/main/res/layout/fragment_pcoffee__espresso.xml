@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home.CoffeeBeans.CoffeeBeans_Robusta">
+    tools:context=".Home.PopularCoffee.PopularCoffee_Espresso">
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
-                android:text="@string/coffeeBean_robusta_title"
+                android:text="Espresso"
                 android:textColor="#000000"
                 android:textSize="25sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +43,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="25dp"
                 android:adjustViewBounds="true"
-                android:src="@drawable/coffeebean_robusta_main"
+                android:src="@drawable/popcoffee_espresso_main"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView16" />
@@ -58,7 +58,7 @@
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="10dp"
                 android:lineSpacingExtra="8sp"
-                android:text="@string/coffeebeans_robusta_text"
+                android:text="@string/popularcoffee_espresso_text"
                 android:textAlignment="viewStart"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -84,7 +84,7 @@
         fontPath="fonts/panton_black_caps.otf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/coffee_beans"
+        android:text="@string/popular_coffees"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
