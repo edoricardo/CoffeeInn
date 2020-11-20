@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Partnership.fragment_partner_pWandy">
+    tools:context=".Partnership.Partner_PakWandy">
 
     <WebView
         android:layout_width="0dp"

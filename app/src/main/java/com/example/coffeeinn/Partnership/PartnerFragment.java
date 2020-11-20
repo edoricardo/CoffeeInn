@@ -12,7 +12,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans_Arabica;
 import com.example.coffeeinn.R;
 
 /**
@@ -79,7 +78,7 @@ public class PartnerFragment extends Fragment {
                 FragmentTransaction fragmentTransaction = fragmentManager
                         .beginTransaction()
                         .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                Fragment selected = new fragment_partner_geura_ngopi();
+                Fragment selected = new Partner_GeuraNgopi();
                 fragmentTransaction.replace(R.id.fragment_container, selected);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
@@ -94,7 +93,7 @@ public class PartnerFragment extends Fragment {
                 FragmentTransaction fragmentTransaction = fragmentManager
                         .beginTransaction()
                         .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                Fragment selected = new fragment_partner_identic_coffee();
+                Fragment selected = new Partner_IdenticCoffee();
                 fragmentTransaction.replace(R.id.fragment_container, selected);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
@@ -109,7 +108,7 @@ public class PartnerFragment extends Fragment {
                 FragmentTransaction fragmentTransaction = fragmentManager
                         .beginTransaction()
                         .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                Fragment selected = new fragment_partner_pdani();
+                Fragment selected = new Partner_PakDani();
                 fragmentTransaction.replace(R.id.fragment_container, selected);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
@@ -124,7 +123,7 @@ public class PartnerFragment extends Fragment {
                 FragmentTransaction fragmentTransaction = fragmentManager
                         .beginTransaction()
                         .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                Fragment selected = new fragment_partner_pWandy();
+                Fragment selected = new Partner_PakWandy();
                 fragmentTransaction.replace(R.id.fragment_container, selected);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();

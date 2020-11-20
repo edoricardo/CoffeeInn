@@ -117,6 +117,27 @@ public class PopularCoffee extends Fragment implements AdapterView.OnItemClickLi
             case 2:
                 selected = new PopularCoffee_GroundCoffee();
                 break;
+            case 3:
+                selected = new PopularCoffee_GroundCoffee();
+                break;
+            case 4:
+                selected = new PopularCoffee_GroundCoffee();
+                break;
+            case 5:
+                selected = new PopularCoffee_GroundCoffee();
+                break;
+            case 6:
+                selected = new PopularCoffee_GroundCoffee();
+                break;
+            case 7:
+                selected = new PopularCoffee_GroundCoffee();
+                break;
+            case 8:
+                selected = new PopularCoffee_GroundCoffee();
+                break;
+            case 9:
+                selected = new PopularCoffee_GroundCoffee();
+                break;
         }
 
         FragmentManager fragmentManager = getFragmentManager();
