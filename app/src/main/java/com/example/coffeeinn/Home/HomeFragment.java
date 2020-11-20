@@ -3,6 +3,7 @@ package com.example.coffeeinn.Home;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -13,6 +14,8 @@ import android.view.ViewGroup;
 
 import com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans;
 import com.example.coffeeinn.R;
+import com.example.coffeeinn.Videos;
+import com.example.coffeeinn.mapstest;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -86,6 +89,40 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
+        view.findViewById(R.id.video).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager
+                        .beginTransaction()
+                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
+                Fragment selected = new Videos();
+                fragmentTransaction.replace(R.id.fragment_container, selected);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
+            }
+        });
+/*
+        view.findViewById(R.id.nearestloc).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager
+                        .beginTransaction()
+                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
+                //new java class name
+                Fragment selected = new mapstest();
+                fragmentTransaction.replace(R.id.fragment_container, selected);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
+            }
+        });
+
+ */
     }
+
 
 }
