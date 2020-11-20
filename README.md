@@ -82,3 +82,9 @@ Added button ripple effects.
 Optimized imports.
 
 Deleted most external libraries, some changed.
+
+# Progress Report #9
+
+Added Brewing Methods and Coffee Beans.
+
+Added button clickability for Image Carousel.
