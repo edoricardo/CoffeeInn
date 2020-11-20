@@ -66,3 +66,19 @@ Home Activity in progress.
 About Us Screen added.
 
 Fading transition root screens added.
+
+# Progress Report #7
+
+Navigation concept found.
+
+ViewFlipper functional.
+
+Button Trigger added to last slide on Image Carousel.
+
+# Progress Report #8
+
+Added button ripple effects.
+
+Optimized imports.
+
+Deleted most external libraries, some changed.
