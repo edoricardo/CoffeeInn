@@ -88,3 +88,13 @@ Deleted most external libraries, some changed.
 Added Brewing Methods and Coffee Beans.
 
 Added button clickability for Image Carousel.
+
+# Progress Report #10
+
+Further added Brewing Methods, Coffee Beans, and Indonesian Coffee.
+
+Improved Scroll views. 
+
+Added Back Icons.
+
+Revised Partnership fragments.
