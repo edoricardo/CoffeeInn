@@ -2,6 +2,7 @@ package com.example.coffeeinn.Home.CoffeeBeans;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -63,5 +64,17 @@ public class CoffeeBeans_Arabica extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_cbean_arabica, container, false);
+    }
+
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {  // it should use OnViewCreated Method
+        super.onViewCreated(view, savedInstanceState);
+
+        view.findViewById(R.id.back_icon).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
+            @Override
+            public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
+                getFragmentManager().popBackStackImmediate();
+
+            }
+        });
     }
 }
