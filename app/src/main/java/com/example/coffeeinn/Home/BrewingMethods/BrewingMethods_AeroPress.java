@@ -2,12 +2,16 @@ package com.example.coffeeinn.Home.BrewingMethods;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans;
 import com.example.coffeeinn.R;
 
 /**
@@ -62,5 +66,17 @@ public class BrewingMethods_AeroPress extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_bmethods_aeropress, container, false);
+    }
+
+    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {  // it should use OnViewCreated Method
+        super.onViewCreated(view, savedInstanceState);
+
+        view.findViewById(R.id.back_icon).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
+            @Override
+            public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
+                getFragmentManager().popBackStackImmediate();
+
+            }
+        });
     }
 }
