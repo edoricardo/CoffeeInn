@@ -98,3 +98,13 @@ Improved Scroll views.
 Added Back Icons.
 
 Revised Partnership fragments.
+
+# Progress Report #11
+
+Revised Partnership fragments; focused on two, deleted the rest.
+
+New icons added.
+
+New icons for replacing six core buttons.
+
+Video segment works. Still consideration.
