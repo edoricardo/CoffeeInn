@@ -1,5 +1,6 @@
 package com.example.coffeeinn.Home.Videos;
 
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 import com.example.coffeeinn.R;
@@ -22,10 +24,7 @@ import java.util.Arrays;
  */
 public class Videos extends Fragment {
 
-    VideoView videoView;
-    ArrayList<String> arrayList = new ArrayList<>(Arrays.asList("https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4", "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4", "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4"));
-
-    int index = 0;
+    VideoView videoView1, videoView2;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -71,7 +70,14 @@ public class Videos extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_videos, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_videos, container, false);
+        MediaController mc = new MediaController(getActivity());
+        videoView1 = rootView.findViewById(R.id.video1);
+        String path = "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4";
+        videoView1.setVideoURI(Uri.parse(path));
+        videoView1.setMediaController(mc);
+        return rootView;
+
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {  // it should use OnViewCreated Method

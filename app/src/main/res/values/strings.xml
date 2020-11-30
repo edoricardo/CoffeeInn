@@ -51,4 +51,136 @@
     <string name="indocoffee_kopipapuawamena_text">Papua juga merupakan penghasil jenis kopi di Indonesia, Tepatnya di wamena. Kopi ini berjenis arabika yang ditanam di Lembah Baliem pegunungan Jayawijaya yang memiliki ketinggian 2.000 mdpl. Kopi ini ditanam dengan menggunakan alat tradisional, sehingga kopi ini ditanam tanpa menggunakan pupuk kimia dan pestisida. Kopi Papua ini memiliki rasa asam yang sedang dan memiliki ciri khas aroma coklat dan floral.</string>
     <string name="indocoffee_kopisidikalang_text">Kopi Sidikalang merupakan salah satu kopi terbaik Indonesia yang berasal dari Sumatera Utara. Sidikalang merupakan salah satu dari tiga wilayah Sumatera Utara yang menghasilkan kopi dengan rasa yang unik. Dua wilayah lainnya adalah Mandailing dan Lintongnihuta. Kopi ini merupakan kopi robusta dengan aroma yang tidak terlalu tajam. Ciri khas rasa kopi ini adalah adanya rasa pahit khas coklat dengan tingkat keasaman yang rendah, sehingga cocok untuk penikmat kopi yang memiliki masalah lambung.</string>
     <string name="indocoffee_kopitoraja_text">Kopi Toraja merupakan kopi yang tumbuh di daerah Sulawesi. Kopi Toraja memiliki rasa khas yang pahit. Rasa pahit pada kopi Toraja hanya terasa saat diteguk dan tidak meninggalkan bekas setelah diteguk. Kopi Toraja juga memiliki sensasi rasa tanah atau hutan dan memiliki rasa asam yang rendah.</string>
+    <string name="identic_schedule">Senin
+        \nSelasa
+        \nRabu
+        \nKamis
+        \nJumat
+        \nSabtu
+        \nMinggu</string>
+    <string name="identic_scheduletime">9 AM - 8:35 PM
+        \n9 AM - 8:35 PM
+        \n9 AM - 8:35 PM
+        \n9 AM - 8:35 PM
+        \n9 AM - 8:35 PM
+        \nTutup
+        \n9 AM - 8:35 PM</string>
+    <string name="geura_scheduletime">9 AM - 9 PM
+        \n9 AM - 9 PM
+        \n9 AM - 9 PM
+        \n9 AM - 9 PM
+        \n1 PM - 9 PM
+        \n9 AM - 9 PM
+        \nTutup</string>
+    <string name="identic_espressobased_list">
+        Espresso
+        \nLong Black
+        \nPicollo
+        \nCapuccino
+        \nCaffe Latte
+        \nMoccacino
+        \nAffogatto
+        \nDolce Latte
+        \nCaramel Latte
+        \nHazelnut Latte
+        \nVanilla Latte
+        \nBlack Refresher
+        \nEs Kopi Kuy
+    </string>
+    <string name="identic_espressobased_price">
+        15.000
+        \n25.000
+        \n22.000
+        \n25.000
+        \n25.000
+        \n30.000
+        \n25.000
+        \n25.000
+        \n30.000
+        \n30.000
+        \n30.000
+        \n25.000
+        \n25.000
+    </string>
+    <string name="identic_manualBrew_list">
+        Tubruk
+        \nVietnam Drip
+        \nFiltered Coffee
+    </string>
+    <string name="identic_manualBrew_price">
+        20.000
+        \n25.000
+        \n25.000
+    </string>
+    <string name="identic_drinks_list">
+        Grean Tea Latte
+        \nIced Thai Tea
+        \nSummer Drinks
+        \nLychee Spring Iced
+        \nRed Velvet
+        \nLemint Squash Iced
+        \nPink Skies
+    </string>
+    <string name="identic_drinks_price">
+        25.000
+        \n25.000
+        \n25.000
+        \n25.000
+        \n25.000
+        \n25.000
+        \n25.000
+    </string>
+    <string name="identic_blended_list">
+        Chocolate
+        \nStrawberry
+        \nVanilla
+        \nOreo
+        \nOreo Coffee
+    </string>
+    <string name="identic_blended_price">
+        30.000
+        \n30.000
+        \n30.000
+        \n33.000
+        \n35.000
+    </string>
+    <string name="identic_tea_list">
+        Iced Apple Tea
+        \nIced Mint Tea
+        \nIced Strawberry Tea
+        \nIced Tea
+        \nHot Tea
+    </string>
+    <string name="identic_tea_price">
+        18.000
+        \n18.000
+        \n18.000
+        \n13.000
+        \n10.000
+    </string>
+    <string name="identic_specialtea_list">
+        Apple Cider
+        \nHoney Berry
+        \nBonie Nut Lemon
+        \nEnglish Breakfast
+        \nGen Maicha
+        \nSlim and Slender
+    </string>
+    <string name="identic_specialtea_price">
+        22.000
+        \n22.000
+        \n22.000
+        \n22.000
+        \n22.000
+        \n22.000
+    </string>
+    <string name="identic_mains_price">
+        22.000
+        \n22.000
+        \n22.000
+        \n22.000
+        \n22.000
+        \n22.000
+    </string>
+
 </resources>

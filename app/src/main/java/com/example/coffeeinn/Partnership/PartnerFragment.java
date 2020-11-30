@@ -101,34 +101,6 @@ public class PartnerFragment extends Fragment {
             }
         });
 
-        view.findViewById(R.id.pakdani).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                Fragment selected = new Partner_PakDani();
-                fragmentTransaction.replace(R.id.fragment_container, selected);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
 
-            }
-        });
-
-        view.findViewById(R.id.pakwandy).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                Fragment selected = new Partner_PakWandy();
-                fragmentTransaction.replace(R.id.fragment_container, selected);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-
-            }
-        });
     }
 }
