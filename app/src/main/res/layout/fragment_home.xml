@@ -78,7 +78,7 @@
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_indonesiancoffe"
+                android:src="@drawable/icon_indonesiancoffee"
                 app:layout_constraintStart_toStartOf="@+id/BgIconMenu"
                 app:layout_constraintTop_toTopOf="@+id/BgIconMenu" />
 
@@ -92,7 +92,7 @@
                 android:background="@drawable/ripple_effect"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_popularcoffee"
+                android:src="@drawable/icon_popcoffee"
                 app:layout_constraintStart_toEndOf="@+id/button_indocoffee"
                 app:layout_constraintTop_toTopOf="@+id/BgIconMenu" />
 
@@ -105,7 +105,7 @@
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_brewingmethod"
+                android:src="@drawable/icon_brewingmeth"
                 app:layout_constraintStart_toEndOf="@+id/button_popularcoffee"
                 app:layout_constraintTop_toTopOf="@+id/BgIconMenu" />
 
@@ -119,7 +119,7 @@
                 android:background="@android:color/transparent"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_coffeebeans"
+                android:src="@drawable/icon_coffeebeanss"
                 app:layout_constraintStart_toStartOf="@+id/BgIconMenu"
                 app:layout_constraintTop_toBottomOf="@+id/button_indocoffee" />
 
@@ -132,7 +132,7 @@
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_video"
+                android:src="@drawable/icon_videos"
                 app:layout_constraintStart_toEndOf="@+id/button_coffeebeans"
                 app:layout_constraintTop_toBottomOf="@+id/button_popularcoffee" />
 
@@ -145,7 +145,7 @@
                 android:adjustViewBounds="true"
                 android:background="@android:color/transparent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_nearestlocation"
+                android:src="@drawable/icon_nearloc"
                 app:layout_constraintStart_toEndOf="@+id/button_videos"
                 app:layout_constraintTop_toBottomOf="@+id/button_brewingmethods" />
 

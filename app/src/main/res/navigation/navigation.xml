@@ -91,16 +91,6 @@
         android:label="fragment_partner_identic_coffee"
         tools:layout="@layout/fragment_partner_identic_coffee" />
     <fragment
-        android:id="@+id/fragment_partner_pdani"
-        android:name="com.example.coffeeinn.Partnership.Partner_PakDani"
-        android:label="fragment_partner_pdani"
-        tools:layout="@layout/fragment_partner_pdani" />
-    <fragment
-        android:id="@+id/fragment_partner_pWandy"
-        android:name="com.example.coffeeinn.Partnership.Partner_PakWandy"
-        android:label="fragment_partner_p_wandy"
-        tools:layout="@layout/fragment_partner_p_wandy" />
-    <fragment
         android:id="@+id/brewingMethods"
         android:name="com.example.coffeeinn.Home.BrewingMethods.BrewingMethods"
         android:label="fragment_bmethods"
