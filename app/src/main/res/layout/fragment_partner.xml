@@ -58,41 +58,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/geurangopi" />
 
-            <ImageView
-                android:id="@+id/pakdani"
-                android:layout_width="342dp"
-                android:layout_height="89dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="34dp"
-                android:adjustViewBounds="true"
-                android:src="@drawable/pak_dani"
-                android:background="@drawable/ripple_pak_dani"
-                android:clickable="true"
-                android:focusable="true"
-                android:tintMode="src_in"
-                app:tint="@android:color/transparent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/identic" />
-
-            <ImageView
-                android:id="@+id/pakwandy"
-                android:layout_width="342dp"
-                android:layout_height="89dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="34dp"
-                android:adjustViewBounds="true"
-                android:src="@drawable/pak_wandy"
-                android:background="@drawable/ripple_pak_wandy"
-                android:clickable="true"
-                android:focusable="true"
-                android:tintMode="src_in"
-                app:tint="@android:color/transparent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/pakdani" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
