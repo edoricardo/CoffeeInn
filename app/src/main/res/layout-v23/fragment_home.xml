@@ -13,8 +13,8 @@
 
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +79,7 @@
                 android:background="@drawable/ripple_effect"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_indonesiancoffe"
+                android:src="@drawable/icon_indonesiancoffee"
                 app:layout_constraintStart_toStartOf="@+id/BgIconMenu"
                 app:layout_constraintTop_toTopOf="@+id/BgIconMenu" />
 
@@ -93,7 +93,7 @@
                 android:background="@drawable/ripple_effect"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_popularcoffee"
+                android:src="@drawable/icon_popcoffee"
                 app:layout_constraintStart_toEndOf="@+id/button_indocoffee"
                 app:layout_constraintTop_toTopOf="@+id/BgIconMenu" />
 
@@ -107,7 +107,7 @@
                 android:background="@drawable/ripple_effect"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_brewingmethod"
+                android:src="@drawable/icon_brewingmeth"
                 app:layout_constraintStart_toEndOf="@+id/button_popularcoffee"
                 app:layout_constraintTop_toTopOf="@+id/BgIconMenu" />
 
@@ -118,10 +118,10 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="35dp"
                 android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:background="@drawable/ripple_effect"
+                android:background="@android:color/transparent"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/icon_coffeebeans"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_coffeebeanss"
                 app:layout_constraintStart_toStartOf="@+id/BgIconMenu"
                 app:layout_constraintTop_toBottomOf="@+id/button_indocoffee" />
 
@@ -135,12 +135,12 @@
                 android:background="@drawable/ripple_effect"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_video"
+                android:src="@drawable/icon_videos"
                 app:layout_constraintStart_toEndOf="@+id/button_coffeebeans"
                 app:layout_constraintTop_toBottomOf="@+id/button_popularcoffee" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/nearestloc"
                 android:layout_width="105dp"
                 android:layout_height="104dp"
                 android:layout_marginStart="16dp"
@@ -149,7 +149,7 @@
                 android:background="@drawable/ripple_effect"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_nearestlocation"
+                android:src="@drawable/icon_nearloc"
                 app:layout_constraintStart_toEndOf="@+id/button_videos"
                 app:layout_constraintTop_toBottomOf="@+id/button_brewingmethods" />
 
@@ -161,11 +161,13 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginEnd="20dp"
+                android:layout_marginBottom="25dp"
                 android:addStatesFromChildren="false"
                 android:autoStart="true"
+                android:flipInterval="3000"
                 android:inAnimation="@anim/animate_slide_in_left"
                 android:outAnimation="@anim/animate_slide_out_right"
-                android:flipInterval="3000"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button_videos">

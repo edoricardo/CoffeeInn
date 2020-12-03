@@ -106,23 +106,7 @@ public class HomeFragment extends Fragment {
 
             }
         });
-/*
-        view.findViewById(R.id.nearestloc).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                //new java class name
-                Fragment selected = new mapstest();
-                fragmentTransaction.replace(R.id.fragment_container, selected);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
 
-            }
-        });
- */
         view.findViewById(R.id.button_popularcoffee).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
             @Override
             public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
