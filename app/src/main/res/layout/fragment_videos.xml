@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="700dp"
+    android:orientation="vertical"
     tools:context=".Home.Videos.Videos">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,17 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toTopOf="parent"
-            app:layout_constraintEnd_toStartOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </LinearLayout>
 
         <ImageView
             android:id="@+id/headerblue"
@@ -55,7 +45,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/headerblue" />
 
-        <VideoView
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/video1"
             android:layout_width="380dp"
             android:layout_height="216dp"
@@ -63,7 +54,10 @@
             app:layout_constraintEnd_toEndOf="@+id/bgvideo"
             app:layout_constraintHorizontal_bias="0.49"
             app:layout_constraintStart_toStartOf="@+id/bgvideo"
-            app:layout_constraintTop_toTopOf="@+id/bgvideo" />
+            app:layout_constraintTop_toTopOf="@+id/bgvideo"
+            app:autoPlay="false"
+            app:showVideoDuration="true"
+            app:videoId="9CDpQWfNa38"></com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
 
         <TextView
             android:id="@+id/seduhanPertama"
@@ -85,6 +79,8 @@
             app:layout_constraintStart_toStartOf="@+id/seduhanPertama"
             app:layout_constraintTop_toBottomOf="@+id/seduhanPertama" />
 
+
+
         <ImageView
             android:id="@+id/bgvideo2"
             android:layout_width="405dp"
@@ -96,15 +92,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bgvideo" />
 
-        <VideoView
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
             android:id="@+id/video2"
             android:layout_width="380dp"
             android:layout_height="216dp"
             android:layout_marginTop="8dp"
+            app:autoPlay="false"
             app:layout_constraintEnd_toEndOf="@+id/bgvideo2"
             app:layout_constraintHorizontal_bias="0.52"
             app:layout_constraintStart_toStartOf="@+id/bgvideo2"
-            app:layout_constraintTop_toTopOf="@+id/bgvideo2" />
+            app:layout_constraintTop_toTopOf="@+id/bgvideo2"
+            app:showVideoDuration="true"
+            app:videoId="MBF4SliQ0R8">
+
+
+        </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
 
         <TextView
             android:id="@+id/textView20"
@@ -142,4 +145,5 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+
+</LinearLayout>

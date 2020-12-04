@@ -69,6 +69,7 @@ public class Videos extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        /*
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_videos, container, false);
         MediaController mc = new MediaController(getActivity());
@@ -76,7 +77,10 @@ public class Videos extends Fragment {
         String path = "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4";
         videoView1.setVideoURI(Uri.parse(path));
         videoView1.setMediaController(mc);
-        return rootView;
+         return rootView;
+         */
+
+        return inflater.inflate(R.layout.fragment_videos, container, false);
 
     }
 
