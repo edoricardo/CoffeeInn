@@ -57,6 +57,8 @@
             app:layout_constraintTop_toTopOf="@+id/bgvideo"
             app:autoPlay="false"
             app:showVideoDuration="true"
+            app:showYouTubeButton="false"
+            app:showFullScreenButton="false"
             app:videoId="9CDpQWfNa38"></com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
 
         <TextView
@@ -104,6 +106,8 @@
             app:layout_constraintStart_toStartOf="@+id/bgvideo2"
             app:layout_constraintTop_toTopOf="@+id/bgvideo2"
             app:showVideoDuration="true"
+            app:showYouTubeButton="false"
+            app:showFullScreenButton="false"
             app:videoId="MBF4SliQ0R8">
 
 
