@@ -101,7 +101,6 @@ public class BrewingMethods extends Fragment implements AdapterView.OnItemClickL
                 return  item;
             }
         };
-
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
     }

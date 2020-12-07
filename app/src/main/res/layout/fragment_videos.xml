@@ -59,7 +59,7 @@
             app:showVideoDuration="true"
             app:showYouTubeButton="false"
             app:showFullScreenButton="false"
-            app:videoId="9CDpQWfNa38"></com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+            app:videoId="9CDpQWfNa38" />
 
         <TextView
             android:id="@+id/seduhanPertama"

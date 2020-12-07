@@ -185,4 +185,9 @@
         android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiCiwidey"
         android:label="fragment_indocoffee_kopiciwidey"
         tools:layout="@layout/fragment_indocoffee_kopiciwidey" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.coffeeinn.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>

@@ -34,28 +34,13 @@
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingPrefix" />
 
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="25dp"
-                android:adjustViewBounds="true"
-                android:src="@drawable/coffee_placeholder"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
             <TextView
                 android:id="@+id/textView17"
                 fontPath="fonts/LucidaSans_Regular.ttf"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginBottom="10dp"
                 android:lineSpacingExtra="8sp"
                 android:text="@string/bmethods_aeropress_text"
                 android:textAlignment="viewStart"
@@ -63,7 +48,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
                 tools:ignore="MissingPrefix" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

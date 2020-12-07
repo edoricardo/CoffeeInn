@@ -1,5 +1,6 @@
 package com.example.coffeeinn.Home.CoffeeBeans;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,9 +9,14 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.coffeeinn.R;
 
@@ -19,7 +25,9 @@ import com.example.coffeeinn.R;
  * Use the {@link CoffeeBeans#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CoffeeBeans extends Fragment {
+public class CoffeeBeans extends Fragment implements AdapterView.OnItemClickListener {
+
+    Typeface popFont;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -40,7 +48,7 @@ public class CoffeeBeans extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment CoffeeBeans.
+     * @return A new instance of fragment ListFragment.
      */
     // TODO: Rename and change types and number of parameters
     public static CoffeeBeans newInstance(String param1, String param2) {
@@ -59,6 +67,7 @@ public class CoffeeBeans extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        popFont = Typeface.createFromAsset(getContext().getAssets(),"fonts/panton_black_caps.otf");
     }
 
     @Override
@@ -72,73 +81,54 @@ public class CoffeeBeans extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.button_arabica).setOnClickListener(new View.OnClickListener() {
+        String[] pop = {"Arabica", "Excelsa", "Liberica", "Robusta"};
+        ListView listView = (ListView) getView().findViewById(R.id.list_Beans);
+        ArrayAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, pop) {
+            @NonNull
             @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                Fragment selected = new CoffeeBeans_Arabica();
-                fragmentTransaction.replace(R.id.fragment_container, selected);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+            public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
+            {
+                TextView item = (TextView) super.getView(position, convertView, parent);
 
+                item.setTypeface(popFont);
+
+                item.setTextSize(TypedValue.COMPLEX_UNIT_DIP,24);
+
+                return  item;
             }
-        });
+        };
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(this);
+    }
 
-        view.findViewById(R.id.button_robusta).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                Fragment selected = new CoffeeBeans_Robusta();
-                fragmentTransaction.replace(R.id.fragment_container, selected);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l)
+    {
+        Fragment selected = null;
 
-            }
-        });
+        switch (i)
+        {
+            case 0:
+                selected = new CoffeeBeans_Arabica();
+                break;
+            case 1:
+                selected = new CoffeeBeans_Excelsa();
+                break;
+            case 2:
+                selected = new CoffeeBeans_Liberica();
+                break;
+            case 3:
+                selected = new CoffeeBeans_Robusta();
+                break;
+        }
 
-        view.findViewById(R.id.button_excelsa).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                Fragment selected = new CoffeeBeans_Excelsa();
-                fragmentTransaction.replace(R.id.fragment_container, selected);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-
-            }
-        });
-
-        view.findViewById(R.id.button_liberica).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager
-                        .beginTransaction()
-                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
-                Fragment selected = new CoffeeBeans_Liberica();
-                fragmentTransaction.replace(R.id.fragment_container, selected);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-
-            }
-        });
-
-        view.findViewById(R.id.back_icon).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
-            @Override
-            public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
-                getFragmentManager().popBackStackImmediate();
-
-            }
-        });
-
+        FragmentManager fragmentManager = getFragmentManager();
+        assert fragmentManager != null;
+        FragmentTransaction fragmentTransaction = fragmentManager
+                .beginTransaction()
+                .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
+        fragmentTransaction.replace(R.id.fragment_container, selected);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 }
