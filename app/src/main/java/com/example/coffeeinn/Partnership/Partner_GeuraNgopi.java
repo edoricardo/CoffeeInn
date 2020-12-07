@@ -1,5 +1,8 @@
 package com.example.coffeeinn.Partnership;
 
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -68,11 +71,31 @@ public class Partner_GeuraNgopi extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {  // it should use OnViewCreated Method
         super.onViewCreated(view, savedInstanceState);
 
+        super.onViewCreated(view, savedInstanceState);
+        Uri uri = Uri.parse("http://instagram.com/_u/YOUR_USERNAME");
+        final Intent i= new Intent(Intent.ACTION_VIEW,uri);
+        i.setPackage("com.instagram.android");
+        
         view.findViewById(R.id.back_icon).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
             @Override
             public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
                 getFragmentManager().popBackStackImmediate();
 
+
+
+            }
+        });
+
+        view.findViewById(R.id.image_insta).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
+            @Override
+            public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
+                try {
+                    startActivity(i);
+                } catch (ActivityNotFoundException e) {
+
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse("http://instagram.com/geura.ngopi/")));
+                }
             }
         });
     }

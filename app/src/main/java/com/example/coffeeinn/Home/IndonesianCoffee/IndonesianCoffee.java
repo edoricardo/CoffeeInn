@@ -81,7 +81,7 @@ public class IndonesianCoffee extends Fragment implements AdapterView.OnItemClic
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        String[] pop = {"Kopi Aceh", "Kopi Ciwidey", "Kopi Flores", "Kopi Java Ijen Raung", "Kopi Kintamani Bali", "Kopi Liberika Rangsang Meranti Riau", "Kopi Luwak", "Kopi Papua Wamena", "Kopi Sidikalang", "Kopi Toraja"};
+        String[] pop = {"Kopi Ciwidey", "Kopi Flores", "Kopi Java Ijen Raung", "Kopi Kintamani Bali", "Kopi Liberika Rangsang Meranti Riau", "Kopi Luwak", "Kopi Papua Wamena", "Kopi Sidikalang", "Kopi Toraja"};
         ListView listView = (ListView) getView().findViewById(R.id.list_indoCoffee);
         ArrayAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, pop) {
             @NonNull
@@ -109,33 +109,30 @@ public class IndonesianCoffee extends Fragment implements AdapterView.OnItemClic
         switch (i)
         {
             case 0:
-                selected = new IndonesianCoffee_KopiAceh();
-                break;
-            case 1:
                 selected = new IndonesianCoffee_KopiCiwidey();
                 break;
-            case 2:
+            case 1:
                 selected = new IndonesianCoffee_KopiFlores();
                 break;
-            case 3:
+            case 2:
                 selected = new IndonesianCoffee_KopiJavaIjenRaung();
                 break;
-            case 4:
+            case 3:
                 selected = new IndonesianCoffee_KopiKintamaniBali();
                 break;
-            case 5:
+            case 4:
                 selected = new IndonesianCoffee_KopiLiberikaRangsangMerantiRiau();
                 break;
-            case 6:
+            case 5:
                 selected = new IndonesianCoffee_KopiLuwak();
                 break;
-            case 7:
+            case 6:
                 selected = new IndonesianCoffee_KopiPapuaWamena();
                 break;
-            case 8:
+            case 7:
                 selected = new IndonesianCoffee_KopiSidikalang();
                 break;
-            case 9:
+            case 8:
                 selected = new IndonesianCoffee_KopiToraja();
                 break;
         }

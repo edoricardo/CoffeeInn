@@ -15,9 +15,6 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans_Arabica;
-import com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans_Robusta;
-
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link mapstest#newInstance} factory method to
@@ -98,7 +95,7 @@ public class mapstest extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.nearestloc).setOnClickListener(new View.OnClickListener() {
+/*        view.findViewById(R.id.button_location).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getFragmentManager();
@@ -112,6 +109,6 @@ public class mapstest extends Fragment {
                 fragmentTransaction.commit();
 
             }
-        });
+        });*/
     }
 }

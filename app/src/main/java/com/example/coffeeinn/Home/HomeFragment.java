@@ -15,6 +15,7 @@ import com.example.coffeeinn.Home.BrewingMethods.BrewingMethods;
 import com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans;
 import com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee;
 import com.example.coffeeinn.Home.PopularCoffee.PopularCoffee;
+import com.example.coffeeinn.MapsFragment;
 import com.example.coffeeinn.R;
 import com.example.coffeeinn.Home.Videos.Videos;
 
@@ -154,6 +155,23 @@ public class HomeFragment extends Fragment {
 
             }
         });
+
+/*        view.findViewById(R.id.button_location).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
+            @Override
+            public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
+                FragmentManager fragmentManager = getFragmentManager();
+                assert fragmentManager != null;
+                FragmentTransaction fragmentTransaction = fragmentManager
+                        .beginTransaction()
+                        .setCustomAnimations(R.anim.animate_slide_up_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_down_exit);
+                Fragment selected = new MapsFragment();  // Use the java class you want to go to (this is the destination fragment)
+                fragmentTransaction.replace(R.id.fragment_container, selected);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+
+            }
+        });*/
+
     }
 }
 
