@@ -174,7 +174,7 @@
                     android:layout_gravity="center"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/coffee_statistic" />
+                    android:src="@drawable/cs_slide1" />
 
                 <ImageView
                     android:layout_width="fill_parent"
@@ -182,7 +182,7 @@
                     android:layout_gravity="center"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/coffee_statistic01" />
+                    android:src="@drawable/cs_slide2" />
 
                 <ImageView
                     android:layout_width="fill_parent"
@@ -190,7 +190,7 @@
                     android:layout_gravity="center"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/coffee_statistic02" />
+                    android:src="@drawable/cs_slide3" />
 
 
                 <ImageView
@@ -199,7 +199,15 @@
                     android:layout_gravity="center"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/coffee_statistic03" />
+                    android:src="@drawable/cs_slide4" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cs_slide5" />
 
             </ViewFlipper>
 
