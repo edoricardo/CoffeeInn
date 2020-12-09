@@ -70,7 +70,7 @@ public class Partner_IdenticCoffee extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {  // it should use OnViewCreated Method
         super.onViewCreated(view, savedInstanceState);
-        Uri uri = Uri.parse("http://instagram.com/_u/YOUR_USERNAME");
+        Uri uri = Uri.parse("https://instagram.com/identiccoffee?igshid=hbfmrb1u3xzt");
         final Intent i= new Intent(Intent.ACTION_VIEW,uri);
         i.setPackage("com.instagram.android");
 

@@ -64,13 +64,25 @@
 
             <ImageView
                 android:id="@+id/imageView10"
-                android:layout_width="48dp"
-                android:layout_height="51dp"
+                android:layout_width="30dp"
+                android:layout_height="33dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="25dp"
                 android:src="@drawable/icon_loc"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/image_insta" />
+
+            <TextView
+                android:id="@+id/loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Lokasi"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView13"
+                app:layout_constraintStart_toEndOf="@+id/imageView10" />
 
             <TextView
                 android:id="@+id/textView23"
@@ -95,13 +107,26 @@
 
             <ImageView
                 android:id="@+id/imageView12"
-                android:layout_width="48dp"
-                android:layout_height="51dp"
+                android:layout_width="30dp"
+                android:layout_height="33dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="30dp"
                 android:src="@drawable/icon_time"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Jam Operasional"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView14"
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                />
 
             <TextView
                 android:id="@+id/textView24"
@@ -181,14 +206,26 @@
 
             <ImageView
                 android:id="@+id/imageView43"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="33dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="35dp"
                 android:adjustViewBounds="true"
                 android:src="@drawable/icon_menu"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                app:layout_constraintStart_toEndOf="@+id/imageView43" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -218,7 +255,7 @@
                 android:id="@+id/image_insta"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="24dp"
                 android:src="@drawable/ig_logo"
                 android:background="@drawable/ripple_ig"
                 android:clickable="true"
@@ -226,6 +263,19 @@
                 android:tintMode="src_in"
                 app:tint="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.603"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+            <ImageView
+                android:id="@+id/image_wa"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="80dp"
+                android:src="@drawable/wa_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
