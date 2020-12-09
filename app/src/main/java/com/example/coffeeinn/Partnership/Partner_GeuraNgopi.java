@@ -72,7 +72,7 @@ public class Partner_GeuraNgopi extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         super.onViewCreated(view, savedInstanceState);
-        Uri uri = Uri.parse("http://instagram.com/_u/YOUR_USERNAME");
+        Uri uri = Uri.parse("http://instagram.com/geura.ngopi/");
         final Intent i= new Intent(Intent.ACTION_VIEW,uri);
         i.setPackage("com.instagram.android");
         
@@ -96,6 +96,15 @@ public class Partner_GeuraNgopi extends Fragment {
                     startActivity(new Intent(Intent.ACTION_VIEW,
                             Uri.parse("http://instagram.com/geura.ngopi/")));
                 }
+            }
+        });
+        view.findViewById(R.id.image_wa).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
+            @Override
+            public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
+                String url = "https://api.whatsapp.com/send?phone="+"+62 81910014697";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             }
         });
     }
