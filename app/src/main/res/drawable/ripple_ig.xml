@@ -2,5 +2,5 @@
 <ripple xmlns:android="http://schemas.android.com/apk/res/android"
     android:color="@color/Gold">
 
-    <item android:drawable="@drawable/coffeebean_robusta_button" />
+    <item android:drawable="@drawable/ig_logo" />
 </ripple>
