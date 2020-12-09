@@ -190,4 +190,44 @@
         android:name="com.example.coffeeinn.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/longBlack"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_LongBlack"
+        android:label="fragment_pcoffee_longblack"
+        tools:layout="@layout/fragment_pcoffee_longblack" />
+    <fragment
+        android:id="@+id/cappucino"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_Cappucino"
+        android:label="fragment_pcoffee_cappucino"
+        tools:layout="@layout/fragment_pcoffee_cappucino" />
+    <fragment
+        android:id="@+id/caffeLatte"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_CaffeLatte"
+        android:label="fragment_pcoffee_caffelatte"
+        tools:layout="@layout/fragment_pcoffee_caffelatte" />
+    <fragment
+        android:id="@+id/moccacino"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_Moccacino"
+        android:label="fragment_pcoffee_moccacino"
+        tools:layout="@layout/fragment_pcoffee_moccacino" />
+    <fragment
+        android:id="@+id/affogato"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_Affogato"
+        android:label="fragment_pcoffee_affogato"
+        tools:layout="@layout/fragment_pcoffee_affogato" />
+    <fragment
+        android:id="@+id/vietnamDripCoffee"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_VietnamDripCoffee"
+        android:label="fragment_pcoffee_vietnamdripcoffee"
+        tools:layout="@layout/fragment_pcoffee_vietnamdripcoffee" />
+    <fragment
+        android:id="@+id/picollo"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_Picollo"
+        android:label="fragment_pcoffee_picollo"
+        tools:layout="@layout/fragment_pcoffee_picollo" />
+    <fragment
+        android:id="@+id/kopiTubruk"
+        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_KopiTubruk"
+        android:label="fragment_pcoffee_kopitubruk"
+        tools:layout="@layout/fragment_pcoffee_kopitubruk" />
 </navigation>

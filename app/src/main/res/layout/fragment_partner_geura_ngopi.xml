@@ -220,6 +220,11 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="25dp"
                 android:src="@drawable/ig_logo"
+                android:background="@drawable/ripple_ig"
+                android:clickable="true"
+                android:focusable="true"
+                android:tintMode="src_in"
+                app:tint="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />

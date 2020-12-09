@@ -431,17 +431,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-            <TextView
-                android:id="@+id/textView27"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:text="Foods"
-                android:textSize="28sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView117" />
-
             <ImageView
                 android:id="@+id/image_instagram"
                 android:layout_width="50dp"
@@ -449,6 +438,11 @@
                 android:layout_marginStart="80dp"
                 android:layout_marginTop="30dp"
                 android:src="@drawable/ig_logo"
+                android:background="@drawable/ripple_ig"
+                android:clickable="true"
+                android:focusable="true"
+                android:tintMode="src_in"
+                app:tint="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
@@ -460,6 +454,11 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="80dp"
                 android:src="@drawable/wa_logo"
+                android:background="@drawable/ripple_wa"
+                android:clickable="true"
+                android:focusable="true"
+                android:tintMode="src_in"
+                app:tint="@android:color/transparent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />

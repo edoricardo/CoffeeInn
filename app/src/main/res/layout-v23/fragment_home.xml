@@ -118,7 +118,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="35dp"
                 android:adjustViewBounds="true"
-                android:background="@android:color/transparent"
+                android:background="@drawable/ripple_effect"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icon_coffeebeanss"
@@ -154,23 +154,33 @@
                 app:layout_constraintTop_toBottomOf="@+id/button_brewingmethods" />
 
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/banner_cf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewFlipper" />
+
             <ViewFlipper
                 android:id="@+id/viewFlipper"
-                android:layout_width="0dp"
+                android:layout_width="371dp"
                 android:layout_height="200dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="25dp"
+                android:layout_marginTop="35dp"
                 android:addStatesFromChildren="false"
                 android:autoStart="true"
                 android:flipInterval="3000"
                 android:inAnimation="@anim/animate_slide_in_left"
                 android:outAnimation="@anim/animate_slide_out_right"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button_videos">
+                app:layout_constraintTop_toBottomOf="@+id/BgIconMenu">
 
                 <ImageView
                     android:layout_width="fill_parent"

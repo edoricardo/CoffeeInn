@@ -81,7 +81,7 @@ public class PopularCoffee extends Fragment implements AdapterView.OnItemClickLi
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        String[] pop = {"Cold Brew", "Espresso", "Ground Coffee","Espresso Americano", "Double Expresso", "Capuccino", "Caffe Latte", "Caffe Mocha", "Flat White", "Long Black"};
+        String[] pop = {"Affogato", "Caffe Latte", "Cappucino", "Cold Brew", "Espresso", "Ground Coffee", "Kopi Tubruk", "Long Black", "Mocaccino", "Picollo", "Vietnam Drip Coffee"};
         ListView listView = (ListView) getView().findViewById(R.id.listpop);
         ArrayAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, pop) {
             @NonNull
@@ -109,34 +109,37 @@ public class PopularCoffee extends Fragment implements AdapterView.OnItemClickLi
         switch (i)
         {
             case 0:
-                selected = new PopularCoffee_ColdBrew();
+                selected = new PopularCoffee_Affogato();
                 break;
             case 1:
-                selected = new PopularCoffee_Espresso();
+                selected = new PopularCoffee_CaffeLatte();
                 break;
             case 2:
-                selected = new PopularCoffee_GroundCoffee();
+                selected = new PopularCoffee_Cappucino();
                 break;
             case 3:
-                selected = new PopularCoffee_GroundCoffee();
+                selected = new PopularCoffee_ColdBrew();
                 break;
             case 4:
-                selected = new PopularCoffee_GroundCoffee();
+                selected = new PopularCoffee_Espresso();
                 break;
             case 5:
                 selected = new PopularCoffee_GroundCoffee();
                 break;
             case 6:
-                selected = new PopularCoffee_GroundCoffee();
+                selected = new PopularCoffee_KopiTubruk();
                 break;
             case 7:
-                selected = new PopularCoffee_GroundCoffee();
+                selected = new PopularCoffee_LongBlack();
                 break;
             case 8:
-                selected = new PopularCoffee_GroundCoffee();
+                selected = new PopularCoffee_Moccacino();
                 break;
             case 9:
-                selected = new PopularCoffee_GroundCoffee();
+                selected = new PopularCoffee_Picollo();
+                break;
+            case 10:
+                selected = new PopularCoffee_VietnamDripCoffee();
                 break;
         }
 
