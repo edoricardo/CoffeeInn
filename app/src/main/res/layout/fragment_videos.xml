@@ -3,151 +3,155 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="700dp"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Home.Videos.Videos">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/scrollView4"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-
-        <ImageView
-            android:id="@+id/headerblue"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scrollView4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:cropToPadding="false"
-            android:src="@drawable/top_bar"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="16dp" />
-
-        <ImageView
-            android:id="@+id/back_icon"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/back_icon"
-            app:layout_constraintBottom_toBottomOf="@+id/headerblue"
-            app:layout_constraintStart_toStartOf="@+id/headerblue"
-            app:layout_constraintTop_toTopOf="@+id/headerblue" />
-
-        <ImageView
-            android:id="@+id/bgvideo"
-            android:layout_width="405dp"
-            android:layout_height="276dp"
-            android:layout_marginTop="32dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/bg_video"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/headerblue" />
+            android:layout_height="wrap_content">
 
 
-        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-            android:id="@+id/video1"
-            android:layout_width="380dp"
-            android:layout_height="216dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="@+id/bgvideo"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="@+id/bgvideo"
-            app:layout_constraintTop_toTopOf="@+id/bgvideo"
-            app:autoPlay="false"
-            app:showVideoDuration="true"
-            app:showYouTubeButton="false"
-            app:showFullScreenButton="false"
-            app:videoId="9CDpQWfNa38" />
+            <ImageView
+                android:id="@+id/headerblue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:src="@drawable/top_bar"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp" />
 
-        <TextView
-            android:id="@+id/seduhanPertama"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Seduhan Pertama 2020"
-            android:textColor="#2B3252"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/video1"
-            app:layout_constraintTop_toBottomOf="@+id/video1" />
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/back_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/headerblue"
+                app:layout_constraintStart_toStartOf="@+id/headerblue"
+                app:layout_constraintTop_toTopOf="@+id/headerblue" />
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Geura Ngopi"
-            app:layout_constraintStart_toStartOf="@+id/seduhanPertama"
-            app:layout_constraintTop_toBottomOf="@+id/seduhanPertama" />
+            <ImageView
+                android:id="@+id/bgvideo"
+                android:layout_width="405dp"
+                android:layout_height="276dp"
+                android:layout_marginTop="32dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_video"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/headerblue" />
 
 
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/video1"
+                android:layout_width="380dp"
+                android:layout_height="216dp"
+                android:layout_marginTop="8dp"
+                app:autoPlay="false"
+                app:layout_constraintEnd_toEndOf="@+id/bgvideo"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="@+id/bgvideo"
+                app:layout_constraintTop_toTopOf="@+id/bgvideo"
+                app:showFullScreenButton="false"
+                app:showVideoDuration="true"
+                app:showYouTubeButton="false"
+                app:videoId="9CDpQWfNa38" />
 
-        <ImageView
-            android:id="@+id/bgvideo2"
-            android:layout_width="405dp"
-            android:layout_height="276dp"
-            android:layout_marginTop="16dp"
-            android:adjustViewBounds="true"
-            android:src="@drawable/bg_video"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bgvideo" />
+            <TextView
+                android:id="@+id/seduhanPertama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Seduhan Pertama 2020"
+                android:textColor="#2B3252"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/video1"
+                app:layout_constraintTop_toBottomOf="@+id/video1" />
 
-
-        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-            android:id="@+id/video2"
-            android:layout_width="380dp"
-            android:layout_height="216dp"
-            android:layout_marginTop="8dp"
-            app:autoPlay="false"
-            app:layout_constraintEnd_toEndOf="@+id/bgvideo2"
-            app:layout_constraintHorizontal_bias="0.52"
-            app:layout_constraintStart_toStartOf="@+id/bgvideo2"
-            app:layout_constraintTop_toTopOf="@+id/bgvideo2"
-            app:showVideoDuration="true"
-            app:showYouTubeButton="false"
-            app:showFullScreenButton="false"
-            app:videoId="MBF4SliQ0R8">
-
-
-        </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
-
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Service to others leads to the greatness"
-            android:textColor="#2B3252"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/video2"
-            app:layout_constraintTop_toBottomOf="@+id/video2" />
-
-        <TextView
-            android:id="@+id/textView21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Geura Ngopi"
-            app:layout_constraintStart_toStartOf="@+id/textView20"
-            app:layout_constraintTop_toBottomOf="@+id/textView20" />
-
-        <TextView
-            android:id="@+id/textView22"
-            fontPath="fonts/panton_black_caps.otf"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:text="Videos"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            app:layout_constraintBottom_toBottomOf="@+id/headerblue"
-            app:layout_constraintStart_toEndOf="@+id/back_icon"
-            app:layout_constraintTop_toTopOf="@+id/headerblue"
-            tools:ignore="MissingPrefix" />
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geura Ngopi"
+                app:layout_constraintStart_toStartOf="@+id/seduhanPertama"
+                app:layout_constraintTop_toBottomOf="@+id/seduhanPertama" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/bgvideo2"
+                android:layout_width="405dp"
+                android:layout_height="276dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/bg_video"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bgvideo" />
+
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/video2"
+                android:layout_width="380dp"
+                android:layout_height="216dp"
+                android:layout_marginTop="8dp"
+                app:autoPlay="false"
+                app:layout_constraintEnd_toEndOf="@+id/bgvideo2"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="@+id/bgvideo2"
+                app:layout_constraintTop_toTopOf="@+id/bgvideo2"
+                app:showFullScreenButton="false"
+                app:showVideoDuration="true"
+                app:showYouTubeButton="false"
+                app:videoId="MBF4SliQ0R8">
+
+
+            </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Service to others leads to the greatness"
+                android:textColor="#2B3252"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/video2"
+                app:layout_constraintTop_toBottomOf="@+id/video2" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geura Ngopi"
+                app:layout_constraintStart_toStartOf="@+id/textView20"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView22"
+                fontPath="fonts/panton_black_caps.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Videos"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/headerblue"
+                app:layout_constraintStart_toEndOf="@+id/back_icon"
+                app:layout_constraintTop_toTopOf="@+id/headerblue"
+                tools:ignore="MissingPrefix" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </LinearLayout>
