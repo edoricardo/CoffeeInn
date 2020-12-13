@@ -3,16 +3,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Home.CoffeeBeans.CoffeeBeans">
 
-    <ListView
-        android:id="@+id/list_Beans"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:choiceMode="singleChoice"
-        android:divider="@color/Gold"
-        android:dividerHeight="10dp"
-        android:footerDividersEnabled="true"
-        android:headerDividersEnabled="true"
-        android:padding="8dp" />
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/headerblue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:src="@drawable/top_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/back_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/headerblue"
+            app:layout_constraintStart_toStartOf="@+id/headerblue"
+            app:layout_constraintTop_toTopOf="@+id/headerblue" />
+
+        <TextView
+            android:id="@+id/textView22"
+            fontPath="fonts/panton_black_caps.otf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="COFFEE BEANS"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/headerblue"
+            app:layout_constraintStart_toEndOf="@+id/back_icon"
+            app:layout_constraintTop_toTopOf="@+id/headerblue"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/aboutbeans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Ada empat jenis kopi yang paling dikenal di seluruh dunia, yaitu Robusta, Arabika, Liberica, dan Exclesa. Meskipun keempatnya sama-sama keluarga kopi, masing-masing jenis memiliki ciri khas dan keunikannya sendiri. Keempat jenis dapat dibedakan dari bentuk biji, bentuk batang, bentuk daun, bahkan dapat dibedakan juga dari rasa dan aroma dari masing-masing jenis. Pada umumnya, jenis kopi yang paling banyak dikenal adalah jenis Robusta dan Arabica karena jumlah produksinya yang sangat besar di seluruh dunia."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headerblue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="433dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aboutbeans">
+            <ListView
+                android:id="@+id/list_Beans"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice"
+                android:divider="@color/Gold"
+                android:dividerHeight="2dp"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:padding="8dp" >
+            </ListView>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </LinearLayout>
