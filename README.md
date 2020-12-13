@@ -108,3 +108,33 @@ New icons added.
 New icons for replacing six core buttons.
 
 Video segment works. Still consideration.
+
+# Progress Report #12
+
+Revised icon colors, switched icon buttons to correct positions.
+
+Added icon button effects.
+
+# Progress Report #13
+
+Added ViewFlipper for coffee statistics and general information.
+
+Added advertisement banner.
+
+# Progress Report #14
+
+Revised Partnership fragments; improved the menus.
+
+Added social media buttons.
+
+Added drink menus, addresse, and schedule.
+
+Added new icons.
+
+# Progress Report #15
+
+Revised Video layout. Added Scrollview.
+
+Added new popular coffee info.
+
+Revised Coffeebean layout to list.
