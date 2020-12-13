@@ -1,12 +1,7 @@
 package com.example.coffeeinn.Home.NearestLocation;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -15,12 +10,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
 
 import com.example.coffeeinn.R;
 import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -28,22 +27,61 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-
-import java.util.Objects;
 
 public class MapsFragment extends Fragment {
 
     double alpha = 0;
     double beta = 0;
+
+    double charlie = 0;
+    double delta = 0;
+
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
     private static final int REQUEST_CODE = 101;
+    private LocationManager locationManager;
 
-    private void fetchLastLocation() {
-        if (
-                ActivityCompat.checkSelfPermission(this.getContext(),
+    public void findDeviceLocation(Activity activity) {
+        locationManager = (LocationManager) activity.getSystemService(Context.LOCATION_SERVICE);
+
+        getLocation(activity);
+    }
+
+    private void getLocation(Activity activity) {
+        if (ActivityCompat.checkSelfPermission(activity,
+                Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                &&
+                ActivityCompat.checkSelfPermission(activity,
+                        Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(activity, new String[]
+                    {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_CODE);
+            return;
+        }
+        Location LocationGps = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+        Location LocationNetwork = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        Location LocationPassive = locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
+
+        if (LocationGps != null) {
+            charlie = LocationGps.getLatitude();
+            delta = LocationGps.getLongitude();
+        }
+
+        else if (LocationNetwork != null) {
+            charlie = LocationNetwork.getLatitude();
+            delta = LocationNetwork.getLongitude();
+
+        } else if (LocationPassive != null) {
+            charlie = LocationPassive.getLatitude();
+            delta = LocationPassive.getLongitude();
+
+        } else {
+            Toast.makeText(activity, "Can't Get Your Location", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+/*    private void fetchLastLocation() {
+        if (ActivityCompat.checkSelfPermission(this.getContext(),
                         Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
                         &&
                         ActivityCompat.checkSelfPermission(this.getContext(),
@@ -62,14 +100,10 @@ public class MapsFragment extends Fragment {
 
                     alpha = currentLocation.getLatitude();
                     beta = currentLocation.getLongitude();
-
-/*                    SupportMapFragment supportMapFragment = (SupportMapFragment)
-                            getChildFragmentManager().findFragmentById(R.id.map);
-                    supportMapFragment.getMapAsync((OnMapReadyCallback) MapsFragment.this);*/
                 }
             }
         });
-    }
+    }*/
 
     @Nullable
     @Override
@@ -78,13 +112,15 @@ public class MapsFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this.getContext());
-        fetchLastLocation();
+    /*    fetchLastLocation();*/
+        findDeviceLocation(getActivity());
 
         View view = inflater.inflate(R.layout.fragment_maps, container, false);
 
         SupportMapFragment supportMapFragment = (SupportMapFragment)
                 getChildFragmentManager().findFragmentById(R.id.map);
         assert supportMapFragment != null;
+
         supportMapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(final GoogleMap googleMap) {
@@ -107,10 +143,6 @@ public class MapsFragment extends Fragment {
                 LatLng geura = new LatLng(-6.924997, 107.615567);
                 googleMap.addMarker(new MarkerOptions().position(geura).title("Geura Ngopi"));
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(geura));
-
-                LatLng current = new LatLng(alpha, beta);
-                googleMap.addMarker(new MarkerOptions().position(current).title("Current Location"));
-                googleMap.moveCamera(CameraUpdateFactory.newLatLng(current));
 
 
   /*              googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
@@ -142,7 +174,7 @@ public class MapsFragment extends Fragment {
             case REQUEST_CODE:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
                 {
-                    fetchLastLocation();
+                    /*fetchLastLocation();*/
                 }
                 break;
         }
