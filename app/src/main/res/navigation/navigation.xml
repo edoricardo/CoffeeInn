@@ -227,7 +227,7 @@
         tools:layout="@layout/fragment_pcoffee_picollo" />
     <fragment
         android:id="@+id/kopiTubruk"
-        android:name="com.example.coffeeinn.Home.PopularCoffee.PopularCoffee_KopiTubruk"
+        android:name="com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee_KopiTubruk"
         android:label="fragment_pcoffee_kopitubruk"
-        tools:layout="@layout/fragment_pcoffee_kopitubruk" />
+        tools:layout="@layout/fragment_indocoffee_kopitubruk" />
 </navigation>

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Home.CoffeeBeans.CoffeeBeans">
 
     <ListView
@@ -11,8 +12,11 @@
         android:layout_height="wrap_content"
         android:choiceMode="singleChoice"
         android:divider="@color/Gold"
-        android:dividerHeight="10dp"
+        android:dividerHeight="2dp"
         android:footerDividersEnabled="true"
         android:headerDividersEnabled="true"
-        android:padding="8dp" />
+        android:padding="8dp"
+        android:scrollbars="vertical" >
+    </ListView>
+
 </LinearLayout>

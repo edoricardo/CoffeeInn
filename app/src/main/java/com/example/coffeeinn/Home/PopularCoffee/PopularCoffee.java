@@ -81,7 +81,7 @@ public class PopularCoffee extends Fragment implements AdapterView.OnItemClickLi
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        String[] pop = {"Affogato", "Caffe Latte", "Cappucino", "Cold Brew", "Espresso", "Ground Coffee", "Kopi Tubruk", "Long Black", "Mocaccino", "Picollo", "Vietnam Drip Coffee"};
+        String[] pop = {"Affogato", "Caffe Latte", "Cappucino", "Cold Brew", "Espresso", "Ground Coffee", "Long Black", "Mocaccino", "Picollo", "Vietnam Drip Coffee"};
         ListView listView = (ListView) getView().findViewById(R.id.listpop);
         ArrayAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, pop) {
             @NonNull
@@ -127,18 +127,15 @@ public class PopularCoffee extends Fragment implements AdapterView.OnItemClickLi
                 selected = new PopularCoffee_GroundCoffee();
                 break;
             case 6:
-                selected = new PopularCoffee_KopiTubruk();
-                break;
-            case 7:
                 selected = new PopularCoffee_LongBlack();
                 break;
-            case 8:
+            case 7:
                 selected = new PopularCoffee_Moccacino();
                 break;
-            case 9:
+            case 8:
                 selected = new PopularCoffee_Picollo();
                 break;
-            case 10:
+            case 9:
                 selected = new PopularCoffee_VietnamDripCoffee();
                 break;
         }
