@@ -80,7 +80,7 @@ public class MapsFragment extends Fragment {
     }
 
 
-/*    private void fetchLastLocation() {
+    private void fetchLastLocation() {
         if (ActivityCompat.checkSelfPermission(this.getContext(),
                         Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
                         &&
@@ -88,9 +88,8 @@ public class MapsFragment extends Fragment {
                                 Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this.getActivity(), new String[]
                     {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_CODE);
-            return;
         }
-        Task<Location> task = fusedLocationProviderClient.getLastLocation();
+/*        Task<Location> task = fusedLocationProviderClient.getLastLocation();
         task.addOnSuccessListener(new OnSuccessListener<Location>() {
             @Override
             public void onSuccess(Location location) {
@@ -102,8 +101,8 @@ public class MapsFragment extends Fragment {
                     beta = currentLocation.getLongitude();
                 }
             }
-        });
-    }*/
+        });*/
+    }
 
     @Nullable
     @Override
@@ -128,7 +127,10 @@ public class MapsFragment extends Fragment {
                 if (ContextCompat.checkSelfPermission(getContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) ==
                         PackageManager.PERMISSION_GRANTED &&
                         ContextCompat.checkSelfPermission(getContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) ==
-                                PackageManager.PERMISSION_GRANTED) {
+                                PackageManager.PERMISSION_GRANTED)
+                {
+                    ActivityCompat.requestPermissions(getActivity(), new String[]
+                            {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_CODE);
                     googleMap.setMyLocationEnabled(true);
                     googleMap.getUiSettings().setMyLocationButtonEnabled(true);
 
@@ -174,7 +176,7 @@ public class MapsFragment extends Fragment {
             case REQUEST_CODE:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
                 {
-                    /*fetchLastLocation();*/
+                    fetchLastLocation();
                 }
                 break;
         }
