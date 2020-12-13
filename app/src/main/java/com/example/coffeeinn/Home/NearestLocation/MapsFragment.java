@@ -89,6 +89,17 @@ public class MapsFragment extends Fragment {
             @Override
             public void onMapReady(final GoogleMap googleMap) {
 
+                if (ContextCompat.checkSelfPermission(getContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) ==
+                        PackageManager.PERMISSION_GRANTED &&
+                        ContextCompat.checkSelfPermission(getContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) ==
+                                PackageManager.PERMISSION_GRANTED) {
+                    googleMap.setMyLocationEnabled(true);
+                    googleMap.getUiSettings().setMyLocationButtonEnabled(true);
+
+                } else {
+                    Toast.makeText(getContext(), R.string.error_permission_map, Toast.LENGTH_LONG).show();
+                }
+
                 LatLng identic = new LatLng(-6.176698, 106.874278);
                 googleMap.addMarker(new MarkerOptions().position(identic).title("Identic Coffee"));
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(identic));

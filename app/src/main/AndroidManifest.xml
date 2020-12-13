@@ -29,7 +29,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCgPtOv6HkCa0rIr_WVtEt0wTbfmLsKnD8" />
+            android:value="AIzaSyCkviSBac67kot3G5j9TdVmdqmtFIb7hJ4" />
 
         <activity android:name=".Initialization.MainActivity" />
         <activity android:name=".Initialization.check_splash">
