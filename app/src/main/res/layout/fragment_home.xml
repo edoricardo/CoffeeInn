@@ -140,7 +140,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/button_popularcoffee" />
 
             <ImageButton
-                android:id="@+id/nearestloc"
+                android:id="@+id/button_location"
                 android:layout_width="105dp"
                 android:layout_height="104dp"
                 android:layout_marginStart="16dp"

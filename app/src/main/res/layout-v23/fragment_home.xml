@@ -37,8 +37,8 @@
 
             <ImageView
                 android:id="@+id/Logo"
-                android:layout_width="495px"
-                android:layout_height="79px"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
                 android:src="@drawable/coffee_inn_logo"
@@ -64,7 +64,7 @@
                 android:text="@string/coffeein_slogan"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="18sp"
+                android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Logo" />
@@ -114,7 +114,7 @@
                 android:layout_width="105dp"
                 android:layout_height="105dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:adjustViewBounds="true"
                 android:background="@drawable/ripple_effect"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
@@ -128,7 +128,7 @@
                 android:layout_width="105dp"
                 android:layout_height="105dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:adjustViewBounds="true"
                 android:background="@drawable/ripple_effect"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
@@ -138,11 +138,11 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
             <ImageButton
-                android:id="@+id/nearestloc"
+                android:id="@+id/button_location"
                 android:layout_width="105dp"
                 android:layout_height="105dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:adjustViewBounds="true"
                 android:background="@drawable/ripple_effect"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
@@ -227,6 +227,7 @@
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Indonesian Coffees"
                 android:textSize="13sp"
                 android:textStyle="bold"
@@ -238,6 +239,7 @@
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Popular Coffees"
                 android:textSize="13sp"
                 android:textStyle="bold"
@@ -249,6 +251,7 @@
                 android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Brewing Methods"
                 android:textAlignment="viewStart"
                 android:textSize="13sp"
@@ -261,6 +264,7 @@
                 android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Coffee Beans"
                 android:textSize="13sp"
                 android:textStyle="bold"
@@ -272,6 +276,7 @@
                 android:id="@+id/textView27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Videos"
                 android:textSize="13sp"
                 android:textStyle="bold"
@@ -283,12 +288,13 @@
                 android:id="@+id/textView28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:text="Location Finder"
                 android:textSize="13sp"
                 android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="@+id/nearestloc"
-                app:layout_constraintStart_toStartOf="@+id/nearestloc"
-                app:layout_constraintTop_toBottomOf="@+id/nearestloc" />
+                app:layout_constraintEnd_toEndOf="@+id/button_location"
+                app:layout_constraintStart_toStartOf="@+id/button_location"
+                app:layout_constraintTop_toBottomOf="@+id/button_location" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
