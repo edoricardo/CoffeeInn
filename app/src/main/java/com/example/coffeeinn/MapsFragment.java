@@ -7,8 +7,10 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -31,9 +34,41 @@ import java.util.Objects;
 
 public class MapsFragment extends Fragment {
 
+    double alpha = 0;
+    double beta = 0;
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
     private static final int REQUEST_CODE = 101;
+
+    private void fetchLastLocation() {
+        if (
+                ActivityCompat.checkSelfPermission(this.getContext(),
+                        Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                        &&
+                        ActivityCompat.checkSelfPermission(this.getContext(),
+                                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this.getActivity(), new String[]
+                    {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_CODE);
+            return;
+        }
+        Task<Location> task = fusedLocationProviderClient.getLastLocation();
+        task.addOnSuccessListener(new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                if (location != null)
+                {
+                    currentLocation = location;
+
+                    alpha = currentLocation.getLatitude();
+                    beta = currentLocation.getLongitude();
+
+/*                    SupportMapFragment supportMapFragment = (SupportMapFragment)
+                            getChildFragmentManager().findFragmentById(R.id.map);
+                    supportMapFragment.getMapAsync((OnMapReadyCallback) MapsFragment.this);*/
+                }
+            }
+        });
+    }
 
     @Nullable
     @Override
@@ -61,9 +96,9 @@ public class MapsFragment extends Fragment {
                 googleMap.addMarker(new MarkerOptions().position(geura).title("Geura Ngopi"));
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(geura));
 
-/*                LatLng current = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
+                LatLng current = new LatLng(alpha, beta);
                 googleMap.addMarker(new MarkerOptions().position(current).title("Current Location"));
-                googleMap.moveCamera(CameraUpdateFactory.newLatLng(current));*/
+                googleMap.moveCamera(CameraUpdateFactory.newLatLng(current));
 
 
   /*              googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
@@ -86,32 +121,6 @@ public class MapsFragment extends Fragment {
         });
 
         return view;
-    }
-
-    private void fetchLastLocation() {
-        if (
-                ActivityCompat.checkSelfPermission(this.getContext(),
-                        Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
-                        &&
-                        ActivityCompat.checkSelfPermission(this.getContext(),
-                                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this.getActivity(), new String[]
-                    {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_CODE);
-            return;
-        }
-        Task<Location> task = fusedLocationProviderClient.getLastLocation();
-        task.addOnSuccessListener(new OnSuccessListener<Location>() {
-            @Override
-            public void onSuccess(Location location) {
-                if (location != null)
-                {
-                    currentLocation = location;
-                    Toast.makeText(getContext(),
-                            currentLocation.getLatitude() + " : " + currentLocation.getLongitude(),
-                            Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
     }
 
     @Override

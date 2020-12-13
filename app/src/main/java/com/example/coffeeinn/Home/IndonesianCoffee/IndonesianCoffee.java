@@ -81,7 +81,7 @@ public class IndonesianCoffee extends Fragment implements AdapterView.OnItemClic
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        String[] pop = {"Kopi Ciwidey", "Kopi Flores", "Kopi Java Ijen Raung", "Kopi Kintamani Bali", "Kopi Liberika Rangsang Meranti Riau", "Kopi Luwak", "Kopi Papua Wamena", "Kopi Sidikalang", "Kopi Toraja"};
+        String[] pop = {"Kopi Ciwidey", "Kopi Flores", "Kopi Java Ijen Raung", "Kopi Kintamani Bali", "Kopi Liberika Rangsang Meranti Riau", "Kopi Luwak", "Kopi Papua Wamena", "Kopi Sidikalang", "Kopi Toraja", "Kopi Tubruk"};
         ListView listView = (ListView) getView().findViewById(R.id.list_indoCoffee);
         ArrayAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, pop) {
             @NonNull
@@ -134,6 +134,9 @@ public class IndonesianCoffee extends Fragment implements AdapterView.OnItemClic
                 break;
             case 8:
                 selected = new IndonesianCoffee_KopiToraja();
+                break;
+            case 9:
+                selected = new IndonesianCoffee_KopiTubruk();
                 break;
         }
 
