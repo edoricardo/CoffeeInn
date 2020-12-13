@@ -27,6 +27,11 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:src="@drawable/back_icon"
+            android:background="@drawable/back_icon_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:tintMode="src_in"
+            app:tint="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="@+id/headerblue"
             app:layout_constraintStart_toStartOf="@+id/headerblue"
             app:layout_constraintTop_toTopOf="@+id/headerblue" />
@@ -50,12 +55,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
+            android:lineSpacingExtra="4sp"
+            android:paddingLeft="12dp"
+            fontPath="fonts/LucidaSans_Regular.ttf"
+            android:paddingRight="12dp"
             android:text="Ada empat jenis kopi yang paling dikenal di seluruh dunia, yaitu Robusta, Arabika, Liberica, dan Exclesa. Meskipun keempatnya sama-sama keluarga kopi, masing-masing jenis memiliki ciri khas dan keunikannya sendiri. Keempat jenis dapat dibedakan dari bentuk biji, bentuk batang, bentuk daun, bahkan dapat dibedakan juga dari rasa dan aroma dari masing-masing jenis. Pada umumnya, jenis kopi yang paling banyak dikenal adalah jenis Robusta dan Arabica karena jumlah produksinya yang sangat besar di seluruh dunia."
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/headerblue" />
+            app:layout_constraintTop_toBottomOf="@+id/headerblue"
+            tools:ignore="MissingPrefix" />
 
         <LinearLayout
             android:layout_width="match_parent"

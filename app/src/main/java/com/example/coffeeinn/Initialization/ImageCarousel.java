@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
-import com.example.coffeeinn.MainActivity;
 import com.example.coffeeinn.R;
 import com.squareup.picasso.Picasso;
 import com.synnapps.carouselview.CarouselView;

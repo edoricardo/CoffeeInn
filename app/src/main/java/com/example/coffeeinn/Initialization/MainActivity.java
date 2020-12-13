@@ -1,4 +1,4 @@
-package com.example.coffeeinn;
+package com.example.coffeeinn.Initialization;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import android.view.View;
 import com.example.coffeeinn.About.AboutFragment;
 import com.example.coffeeinn.Home.HomeFragment;
 import com.example.coffeeinn.Partnership.PartnerFragment;
+import com.example.coffeeinn.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import io.github.inflationx.calligraphy3.CalligraphyConfig;
