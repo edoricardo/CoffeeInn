@@ -156,7 +156,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-/*        view.findViewById(R.id.button_location).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
+        view.findViewById(R.id.button_location).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
             @Override
             public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
                 FragmentManager fragmentManager = getFragmentManager();
@@ -170,7 +170,7 @@ public class HomeFragment extends Fragment {
                 fragmentTransaction.commit();
 
             }
-        });*/
+        });
 
     }
 }
