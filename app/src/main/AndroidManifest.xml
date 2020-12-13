@@ -31,7 +31,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCgPtOv6HkCa0rIr_WVtEt0wTbfmLsKnD8" />
 
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Initialization.MainActivity" />
         <activity android:name=".Initialization.check_splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

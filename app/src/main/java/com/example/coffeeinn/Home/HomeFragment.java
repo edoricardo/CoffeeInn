@@ -15,7 +15,7 @@ import com.example.coffeeinn.Home.BrewingMethods.BrewingMethods;
 import com.example.coffeeinn.Home.CoffeeBeans.CoffeeBeans;
 import com.example.coffeeinn.Home.IndonesianCoffee.IndonesianCoffee;
 import com.example.coffeeinn.Home.PopularCoffee.PopularCoffee;
-import com.example.coffeeinn.MapsFragment;
+import com.example.coffeeinn.Home.NearestLocation.MapsFragment;
 import com.example.coffeeinn.R;
 import com.example.coffeeinn.Home.Videos.Videos;
 
@@ -84,7 +84,7 @@ public class HomeFragment extends Fragment {
                 assert fragmentManager != null;
                 FragmentTransaction fragmentTransaction = fragmentManager
                         .beginTransaction()
-                        .setCustomAnimations(R.anim.animate_card_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_left_exit);
+                        .setCustomAnimations(R.anim.animate_slide_up_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_down_exit);
                 Fragment selected = new CoffeeBeans();  // Use the java class you want to go to (this is the destination fragment)
                 fragmentTransaction.replace(R.id.fragment_container, selected);
                 fragmentTransaction.addToBackStack(null);
@@ -163,7 +163,7 @@ public class HomeFragment extends Fragment {
                 assert fragmentManager != null;
                 FragmentTransaction fragmentTransaction = fragmentManager
                         .beginTransaction()
-                        .setCustomAnimations(R.anim.animate_slide_up_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_down_exit);
+                        .setCustomAnimations(R.anim.animate_zoom_enter, R.anim.fadeout, R.anim.fadein, R.anim.animate_slide_down_exit);
                 Fragment selected = new MapsFragment();  // Use the java class you want to go to (this is the destination fragment)
                 fragmentTransaction.replace(R.id.fragment_container, selected);
                 fragmentTransaction.addToBackStack(null);

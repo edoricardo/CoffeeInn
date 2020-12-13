@@ -27,6 +27,11 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
             android:src="@drawable/back_icon"
+            android:background="@drawable/back_icon_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:tintMode="src_in"
+            app:tint="@android:color/transparent"
             app:layout_constraintBottom_toBottomOf="@+id/headerblue"
             app:layout_constraintStart_toStartOf="@+id/headerblue"
             app:layout_constraintTop_toTopOf="@+id/headerblue" />

@@ -99,6 +99,14 @@ public class PopularCoffee extends Fragment implements AdapterView.OnItemClickLi
         };
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
+
+        view.findViewById(R.id.back_icon).setOnClickListener(new View.OnClickListener() { // In the R.id, use the id of your button
+            @Override
+            public void onClick(View view) { // Use the R.id. of your button/ImageView/ImageButton you want to press
+                getFragmentManager().popBackStackImmediate();
+
+            }
+        });
     }
 
     @Override
