@@ -41,6 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
                 android:lineSpacingExtra="8sp"
                 android:text="@string/cbeans_liberica_text"
                 android:textAlignment="viewStart"
