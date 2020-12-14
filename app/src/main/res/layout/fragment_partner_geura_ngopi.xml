@@ -185,9 +185,11 @@
                 android:layout_marginStart="55dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
                 android:lineSpacingExtra="8sp"
                 android:text="@string/guera_list"
                 android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/textView103"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -201,6 +203,7 @@
                 android:text="@string/guera_price"
                 android:textColor="@color/RedCoffeeInn"
                 android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView102"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textView102" />
 
